@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Sebastian Luna | Frontend developer",
+    "description": "Portfolio of Sebastian Luna, frontend developer based in Boca del Río, Veracruz. I design the interface, write the code and stay until the product is in production."
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "portfolioLabel": "Portfolio {year}",
+    "downloadCv": "Download CV",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email",
+    "opensInNewTab": "(opens in a new tab)"
+  },
+  "nav": {
+    "label": "Sections",
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu"
+  },
+  "hero": {
+    "available": "Open to opportunities",
+    "availableShort": "Available",
+    "name": "sebastian<br></br>luna",
+    "role": "Frontend developer",
+    "lead": "I design the interface, write the code and stay until the product is in production. Founder of <strong>365 Días de Ajedrez</strong>.",
+    "portraitAlt": "Portrait of Sebastian Luna",
+    "stats": {
+      "years": "Years in interface design and frontend",
+      "products": "Products in production",
+      "lighthouse": "Lighthouse performance, with 100 in accessibility",
+      "deploys": "Deployments from a single repository at Reto MD"
+    }
+  },
+  "projects": {
+    "title": "projects",
+    "subtitle": "Four products in production",
+    "visit": "Visit the site",
+    "domainPending": "Domain to be confirmed",
+    "screenshotPending": "Screenshot pending",
+    "items": {
+      "reto-md": {
+        "kicker": "Network of medical sites",
+        "title": "reto md",
+        "description": "Frontend of the Reto MD products, the app medical students use to prepare for the ENARM residency exam. Corporate site in Next.js and every specialty unified under a multi-tenant architecture: one repository, six deployments.",
+        "stack": "Next.js · TypeScript · Tailwind · next-intl · Firebase · TanStack Query · Vercel · SEO",
+        "imageAlt": "Home page of Reto Pediatría",
+        "tabs": ["Reto Pediatría", "+ 7 sites in the network"]
+      },
+      "365-dias-de-ajedrez": {
+        "kicker": "Online academy · own project",
+        "title": "365 días de ajedrez",
+        "description": "My own chess academy and platform: courses by chapter, an interactive board with variations and opening training. I define the product, design the screens and build them.",
+        "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Vitest · Vercel",
+        "imageAlt": "Home page of 365 Días de Ajedrez",
+        "tabs": ["365 Días de Ajedrez", "Método 365"]
+      },
+      "cuarteto-fratres": {
+        "kicker": "String quartet website",
+        "title": "cuarteto fratres",
+        "description": "Website of a string quartet and its booking material: upcoming dates, member profiles, repertoire with a player and a contact form. The group edits all the content from a CMS.",
+        "stack": "Next.js · TypeScript · Payload CMS · PostgreSQL · Vitest · Vercel",
+        "imageAlt": "Home page of the Cuarteto Fratres site: headline on a dark background, portrait of the quartet and upcoming concert dates",
+        "tabs": ["Cuarteto Fratres"]
+      },
+      "vallarta-wknd": {
+        "kicker": "Tourism · bookings and payments",
+        "title": "vallarta wknd",
+        "description": "A tourism site from start to finish: research, wireframes, design and frontend, with bookings, payments and availability on Shopify.",
+        "stack": "Shopify · Liquid · JavaScript · Bookings · Payments · Availability",
+        "imageAlt": "Screenshot of the Vallarta WKND site",
+        "tabs": ["Vallarta WKND", "Bookings"]
+      }
+    }
+  },
+  "about": {
+    "title": "about me",
+    "subtitle": "UI design · Frontend · Full Stack",
+    "tags": ["UI design", "Frontend", "Full Stack", "Accessibility"],
+    "quote": "I don't separate the design of the interface, the code that makes it work and the decision of what is worth building.",
+    "paragraphs": [
+      "I come from UI design and frontend. That is where I learned to solve the visual detail, the accessibility and the behaviour of the interface before moving towards the back end, where today I work with data, authentication and deployment.",
+      "Founding 365 Días de Ajedrez forced me to decide with judgement: what to build first, what to leave out and how to communicate it. It also put me in charge of the screen design, the web development and the advertising of the product.",
+      "I am looking for a team where I can contribute to the interface without losing sight of the whole product."
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "let's talk about a role",
+    "location": "Boca del Río, Veracruz (MX) · remote · open to relocation"
+  },
+  "footer": {
+    "signature": "Sebastian Luna · Frontend developer",
+    "signatureShort": "Sebastian Luna"
+  },
+  "notFound": {
+    "title": "This page does not exist",
+    "text": "The portfolio is a single page. Go back to the start to see the projects and the contact details.",
+    "back": "Go to the start"
+  }
+}

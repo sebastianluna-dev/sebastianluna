@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Sebastian Luna | Frontend developer",
+    "description": "Portafolio de Sebastian Luna, frontend developer en Boca del Río, Veracruz. Diseño la interfaz, escribo el código y me quedo hasta que el producto está en producción."
+  },
+  "common": {
+    "skipToContent": "Saltar al contenido",
+    "portfolioLabel": "Portafolio {year}",
+    "downloadCv": "Descargar CV",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email",
+    "opensInNewTab": "(se abre en otra pestaña)"
+  },
+  "nav": {
+    "label": "Secciones",
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "language": "Idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menu": "Menú"
+  },
+  "hero": {
+    "available": "Disponible para vacantes",
+    "availableShort": "Disponible",
+    "name": "sebastian<br></br>luna",
+    "role": "Frontend developer",
+    "lead": "Diseño la interfaz, escribo el código y me quedo hasta que el producto está en producción. Fundador de <strong>365 Días de Ajedrez</strong>.",
+    "portraitAlt": "Retrato de Sebastian Luna",
+    "stats": {
+      "years": "Años en diseño de interfaz y frontend",
+      "products": "Productos en producción",
+      "lighthouse": "Rendimiento en Lighthouse, con 100 en accesibilidad",
+      "deploys": "Despliegues desde un mismo repositorio en Reto MD"
+    }
+  },
+  "projects": {
+    "title": "proyectos",
+    "subtitle": "Cuatro productos en producción",
+    "visit": "Visitar el sitio",
+    "domainPending": "Dominio por confirmar",
+    "screenshotPending": "Captura pendiente",
+    "items": {
+      "reto-md": {
+        "kicker": "Red de sitios médicos",
+        "title": "reto md",
+        "description": "Frontend de los productos de Reto MD, la app con la que estudiantes de medicina preparan el ENARM. Sitio corporativo en Next.js y unificación de todas las especialidades en una arquitectura multi-tenant: un repositorio, seis despliegues.",
+        "stack": "Next.js · TypeScript · Tailwind · next-intl · Firebase · TanStack Query · Vercel · SEO",
+        "imageAlt": "Página de inicio de Reto Pediatría",
+        "tabs": ["Reto Pediatría", "+ 7 sitios de la red"]
+      },
+      "365-dias-de-ajedrez": {
+        "kicker": "Academia online · proyecto propio",
+        "title": "365 días de ajedrez",
+        "description": "Academia y plataforma propias: cursos por capítulos, tablero interactivo con variantes y entrenamiento de aperturas. Defino el producto, diseño las pantallas y las construyo.",
+        "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Vitest · Vercel",
+        "imageAlt": "Página de inicio de 365 Días de Ajedrez",
+        "tabs": ["365 Días de Ajedrez", "Método 365"]
+      },
+      "cuarteto-fratres": {
+        "kicker": "Sitio del cuarteto",
+        "title": "cuarteto fratres",
+        "description": "Sitio de un cuarteto de cuerdas y su material para contrataciones: próximas fechas, semblanzas, repertorio con reproductor y formulario de contacto. El grupo edita todo el contenido desde un CMS.",
+        "stack": "Next.js · TypeScript · Payload CMS · PostgreSQL · Vitest · Vercel",
+        "imageAlt": "Página de inicio del sitio del Cuarteto Fratres: titular sobre fondo oscuro, retrato del cuarteto y próximas fechas de concierto",
+        "tabs": ["Cuarteto Fratres"]
+      },
+      "vallarta-wknd": {
+        "kicker": "Turismo · reservas y pagos",
+        "title": "vallarta wknd",
+        "description": "Sitio turístico de principio a fin: investigación, wireframes, diseño y frontend, con reservas, pagos y disponibilidad sobre Shopify.",
+        "stack": "Shopify · Liquid · JavaScript · Reservas · Pagos · Disponibilidad",
+        "imageAlt": "Captura del sitio de Vallarta WKND",
+        "tabs": ["Vallarta WKND", "Reservas"]
+      }
+    }
+  },
+  "about": {
+    "title": "sobre mí",
+    "subtitle": "Diseño UI · Frontend · Full Stack",
+    "tags": ["Diseño UI", "Frontend", "Full Stack", "Accesibilidad"],
+    "quote": "No separo el diseño de la interfaz, el código que la hace funcionar y la decisión de qué vale la pena construir.",
+    "paragraphs": [
+      "Vengo del diseño UI y del frontend. Ahí aprendí a resolver el detalle visual, la accesibilidad y el comportamiento de la interfaz antes de moverme hacia el back end, donde hoy trabajo con datos, autenticación y despliegue.",
+      "Fundar 365 Días de Ajedrez me obligó a decidir con criterio: qué construir primero, qué dejar fuera y cómo comunicarlo. También me puso a cargo del diseño de las pantallas, del desarrollo web y de la publicidad del producto.",
+      "Busco un equipo donde pueda aportar en la interfaz sin perder de vista el producto completo."
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "hablemos de una vacante",
+    "location": "Boca del Río, Veracruz (MX) · remoto · abierto a reubicación"
+  },
+  "footer": {
+    "signature": "Sebastian Luna · Frontend developer",
+    "signatureShort": "Sebastian Luna"
+  },
+  "notFound": {
+    "title": "Esta página no existe",
+    "text": "El portafolio es una sola página. Vuelve al inicio para ver los proyectos y el contacto.",
+    "back": "Ir al inicio"
+  }
+}

@@ -1,0 +1,69 @@
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 8px 8px 26px;
+  border-radius: 999px;
+  background: var(--color-ink);
+  color: var(--color-text-on-ink);
+  font-size: 17px;
+  font-weight: 500;
+  transition:
+    background 0.25s,
+    color 0.25s;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--color-rust);
+    color: var(--color-text-on-ink);
+  }
+
+  & .pill-link__badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--color-amber);
+    color: var(--color-ink);
+    font-size: 18px;
+  }
+
+  &.pill-link_size_sm {
+    padding: 7px 7px 7px 24px;
+    font-size: 16px;
+
+    & .pill-link__badge {
+      width: 38px;
+      height: 38px;
+      font-size: 17px;
+    }
+  }
+
+  /* Light pill on the amber contact card: the badge inverts. */
+  &.pill-link_variant_paper {
+    padding: 7px 7px 7px 22px;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-size: 16px;
+    font-weight: 600;
+
+    & .pill-link__badge {
+      width: 36px;
+      height: 36px;
+      background: var(--color-ink);
+      color: var(--color-amber);
+      font-size: 17px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: var(--color-ink);
+      color: var(--color-text-on-ink);
+    }
+  }
+
+  /* On the phone the pills stretch and put the badge at the far end. */
+}

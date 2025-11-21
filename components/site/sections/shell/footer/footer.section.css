@@ -1,0 +1,21 @@
+.footer {
+  border-top: 1px solid var(--color-line);
+
+  & .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    padding-block: 20px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  /* The long signature on wide screens, the name alone on the phone. */
+  & .footer__signature_short {
+    display: none;
+  }
+}

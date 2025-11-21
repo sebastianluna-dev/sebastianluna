@@ -1,0 +1,52 @@
+.header {
+  padding-top: clamp(20px, 2.6vw, 36px);
+
+  & .header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 24px;
+  }
+
+  & .header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(10px, 1.4vw, 18px);
+    font-size: clamp(15px, 1.3vw, 17px);
+  }
+
+  & .header__nav-item {
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(10px, 1.4vw, 18px);
+  }
+
+  & .header__separator {
+    color: var(--color-line-strong);
+  }
+
+  & .header__link {
+    transition: color 0.2s;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-rust);
+    }
+  }
+
+  & .header__label {
+    margin-left: auto;
+    letter-spacing: 0.14em;
+  }
+
+  & .header__tools {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  /* Phone: the label on the left, the language switch and the menu button on
+     the right; the inline links live in the menu. */
+}

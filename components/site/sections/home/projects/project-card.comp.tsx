@@ -17,7 +17,7 @@ interface ProjectCardProps {
 // screenshot inside a browser window. Odd and even cards mirror each other.
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const t = useTranslations("projects");
-  const tItem = useTranslations(`projects.items.${project.slug}` as Parameters<typeof useTranslations>[0]);
+  const tItem = useTranslations(`projects.items.${project.slug}`);
   const tabs = messageList(tItem.raw("tabs"));
   const domain = project.url ? displayUrl(project.url) : null;
 

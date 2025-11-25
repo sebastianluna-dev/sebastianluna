@@ -8,8 +8,11 @@ export interface ProjectImage {
   height: number;
 }
 
+/** Keys of `projects.items` in the messages. */
+export type ProjectSlug = "reto-md" | "365-dias-de-ajedrez" | "cuarteto-fratres" | "vallarta-wknd";
+
 export interface Project {
-  slug: string;
+  slug: ProjectSlug;
   /** Public URL of the product, when it is live under a domain of its own. */
   url: string | null;
   /** Screenshot of the home page; `null` shows a "capture pending" card. */

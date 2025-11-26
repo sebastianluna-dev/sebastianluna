@@ -1,0 +1,52 @@
+.about {
+  padding-top: clamp(40px, 5.4vw, 80px);
+
+  & .about__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: clamp(28px, 4vw, 64px);
+  }
+
+  & .about__head {
+    flex: 0 1 300px;
+    min-width: 220px;
+  }
+
+  & .about__subtitle {
+    margin-top: 18px;
+
+    &.about__subtitle_short {
+      display: none;
+    }
+  }
+
+  & .about__body {
+    flex: 1 1 420px;
+    min-width: 280px;
+    max-width: 60ch;
+  }
+
+  & .about__tags {
+    display: none;
+  }
+
+  & .about__quote {
+    margin-bottom: 26px;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(24px, 2.6vw, 36px);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  & .about__text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-text-soft);
+
+    & + .about__text {
+      margin-top: 16px;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import type { ComponentType } from "react";
+import { AboutSection } from "@/components/site/sections/home/about/about.section";
 import { HeroSection } from "@/components/site/sections/home/hero/hero.section";
 import { ProjectsSection } from "@/components/site/sections/home/projects/projects.section";
 
@@ -12,4 +13,5 @@ interface HomeSection {
 export const HOME_SECTIONS: readonly HomeSection[] = [
   { id: "hero", Section: HeroSection },
   { id: "projects", Section: ProjectsSection },
+  { id: "about", Section: AboutSection },
 ];

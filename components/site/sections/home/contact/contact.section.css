@@ -1,0 +1,75 @@
+.contact {
+  padding: clamp(44px, 6vw, 96px) 0 clamp(36px, 5vw, 72px);
+
+  & .contact__card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: clamp(24px, 3.4vw, 52px);
+    padding: clamp(28px, 4vw, 60px);
+    border-radius: var(--radius-card);
+    background: var(--color-amber);
+  }
+
+  & .contact__copy {
+    flex: 1 1 360px;
+    min-width: 280px;
+  }
+
+  & .contact__eyebrow {
+    margin-bottom: 18px;
+  }
+
+  & .contact__title {
+    margin-bottom: 18px;
+    font-size: clamp(32px, 4.6vw, 66px);
+    line-height: 0.95;
+  }
+
+  & .contact__email {
+    margin-bottom: 24px;
+    font-family: var(--font-mono);
+    font-size: clamp(15px, 1.6vw, 20px);
+    overflow-wrap: anywhere;
+  }
+
+  & .contact__email-link {
+    border-bottom: 1px solid var(--color-ink);
+    transition:
+      color 0.2s,
+      border-color 0.2s;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-cocoa);
+      border-color: var(--color-cocoa);
+    }
+  }
+
+  & .contact__email-arrow {
+    display: none;
+  }
+
+  & .contact__location {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: var(--color-cocoa);
+  }
+
+  & .contact__actions {
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  & .contact__cv-plain {
+    display: none;
+  }
+
+  /* Phone: no card. A rule over the title, the email as an amber block, the
+     two pills side by side and the CV as a plain text link. */
+}

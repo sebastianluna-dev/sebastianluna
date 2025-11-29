@@ -49,4 +49,24 @@
 
   /* Phone: the label on the left, the language switch and the menu button on
      the right; the inline links live in the menu. */
+  @media (max-width: 767px) {
+    padding-top: 22px;
+
+    & .header__inner {
+      flex-wrap: nowrap;
+      min-height: 44px;
+    }
+
+    & .header__nav {
+      display: none;
+    }
+
+    & .header__label {
+      margin-left: 0;
+    }
+
+    & .header__tools {
+      gap: 14px;
+    }
+  }
 }

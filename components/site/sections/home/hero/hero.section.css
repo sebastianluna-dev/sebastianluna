@@ -104,4 +104,85 @@
   & .stat-list {
     order: 1;
   }
+
+  @media (max-width: 767px) {
+    padding-bottom: 0;
+
+    & .hero__inner {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 20px;
+      padding-top: 20px;
+    }
+
+    & .hero__copy {
+      display: flex;
+      flex: none;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 0;
+    }
+
+    /* The badge moves onto the card; the pill under the header goes. */
+    & .hero__available {
+      display: none;
+    }
+
+    & .hero__badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--color-paper);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    & .hero__portrait {
+      order: -1;
+      flex: none;
+      width: 100%;
+      min-width: 0;
+      height: 262px;
+      overflow: hidden;
+      border-radius: 28px;
+    }
+
+    & .hero__photo {
+      width: auto;
+      height: 100%;
+    }
+
+    & .hero__name {
+      margin-top: 0;
+      font-size: 46px;
+    }
+
+    & .hero__role {
+      margin-top: 12px;
+      font-size: 12px;
+    }
+
+    & .hero__lead {
+      margin-top: 0;
+      font-size: 15px;
+    }
+
+    & .hero__actions {
+      flex-wrap: nowrap;
+      gap: 10px;
+      margin-top: 0;
+
+      & .pill-link {
+        flex: 1;
+        width: auto;
+      }
+    }
+  }
 }

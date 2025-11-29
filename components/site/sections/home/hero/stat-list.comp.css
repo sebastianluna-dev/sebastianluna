@@ -31,4 +31,26 @@
     line-height: 1.45;
     color: var(--color-muted);
   }
+
+  @media (max-width: 767px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 16px;
+    margin-top: 0;
+    padding-top: 18px;
+
+    & .stat-list__item {
+      min-width: 0;
+    }
+
+    & .stat-list__value {
+      margin-bottom: 5px;
+      font-size: 34px;
+    }
+
+    & .stat-list__label {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  }
 }

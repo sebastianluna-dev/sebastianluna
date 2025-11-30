@@ -18,4 +18,9 @@
     background: var(--color-ink);
     color: var(--color-text-on-ink);
   }
+
+  @media (max-width: 767px) {
+    width: 52px;
+    height: 52px;
+  }
 }

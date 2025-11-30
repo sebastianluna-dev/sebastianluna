@@ -112,4 +112,72 @@
   }
 
   /* Phone: one column, screenshot first, everything full width. */
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    border-bottom: 0;
+
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+
+    &:not(:first-child) {
+      padding-top: 26px;
+      border-top: 1px solid var(--color-line);
+    }
+
+    & .project-card__copy {
+      display: contents;
+    }
+
+    & .project-card__media {
+      order: -1;
+      flex: none;
+      width: 100%;
+      min-width: 0;
+    }
+
+    & .project-card__shot {
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    & .project-card__kicker {
+      margin-bottom: 0;
+    }
+
+    & .project-card__index {
+      font-size: 30px;
+    }
+
+    & .project-card__category {
+      font-size: 10px;
+    }
+
+    & .project-card__title {
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    & .project-card__domain {
+      margin-top: 0;
+      font-size: 12px;
+    }
+
+    & .project-card__description {
+      margin-top: 0;
+      font-size: 15px;
+    }
+
+    & .project-card__stack {
+      margin-top: 0;
+      font-size: 11px;
+    }
+
+    & .project-card__cta {
+      margin-top: 0;
+    }
+  }
 }

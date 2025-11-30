@@ -10,4 +10,21 @@
     padding-bottom: 18px;
     border-bottom: 1px solid var(--color-line);
   }
+
+  @media (max-width: 767px) {
+    padding-top: 36px;
+
+    & .projects__head {
+      flex-direction: column;
+      gap: 10px;
+      padding-bottom: 14px;
+    }
+
+    & .projects__list {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      padding-top: 26px;
+    }
+  }
 }

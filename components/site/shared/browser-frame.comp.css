@@ -120,4 +120,11 @@
   }
 
   /* On the phone only the screenshot remains, with a hairline around it. */
+  @media (max-width: 767px) {
+    border: 1px solid var(--color-line-soft);
+
+    & .browser-frame__chrome {
+      display: none;
+    }
+  }
 }

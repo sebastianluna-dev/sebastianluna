@@ -72,4 +72,117 @@
 
   /* Phone: no card. A rule over the title, the email as an amber block, the
      two pills side by side and the CV as a plain text link. */
+  @media (max-width: 767px) {
+    padding: 44px 0 36px;
+
+    & .contact__card {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+      padding: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    & .contact__copy {
+      display: contents;
+    }
+
+    & .contact__eyebrow {
+      order: 1;
+      margin-bottom: 0;
+      padding-top: 14px;
+      border-top: 2px solid var(--color-ink);
+      color: var(--color-rust);
+    }
+
+    & .contact__title {
+      order: 2;
+      margin: -4px 0 0;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    & .contact__email {
+      order: 3;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    & .contact__email-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 16px 18px;
+      border-bottom: 0;
+      border-radius: 16px;
+      background: var(--color-amber);
+      transition:
+        background 0.25s,
+        color 0.25s;
+
+      &:hover,
+      &:focus-visible {
+        background: var(--color-ink);
+        color: var(--color-text-on-ink);
+      }
+    }
+
+    & .contact__email-arrow {
+      display: inline;
+      font-size: 16px;
+    }
+
+    & .contact__actions {
+      order: 4;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 10px;
+    }
+
+    & .contact__button {
+      height: 48px;
+      padding: 0;
+    }
+
+    & .contact__button:not(.button_variant_outline):hover,
+    & .contact__button:not(.button_variant_outline):focus-visible {
+      background: var(--color-rust);
+      color: var(--color-text-on-ink);
+    }
+
+    & .button_variant_outline {
+      border-color: var(--color-line-strong);
+    }
+
+    & .contact__cv {
+      display: none;
+    }
+
+    & .contact__cv-plain {
+      display: flex;
+      grid-column: 1 / -1;
+      align-items: center;
+      gap: 10px;
+      padding: 0 0 12px;
+      border-bottom: 1px solid var(--color-line);
+      font-size: 15px;
+      color: var(--color-text-soft);
+
+      &:hover,
+      &:focus-visible {
+        color: var(--color-rust);
+      }
+    }
+
+    & .contact__location {
+      order: 5;
+      font-size: 11px;
+      line-height: 1.7;
+      letter-spacing: 0.04em;
+      color: var(--color-muted);
+    }
+  }
 }

@@ -154,6 +154,26 @@ body:has(dialog[open]) {
 }
 
 /* Every section, the header and the footer share the same content box. */
+/* Blocks fade in the first time they enter the viewport
+   (hooks/use-reveal.hook.ts adds `reveal_seen`). The hidden state only applies
+   where there is scripting to undo it: with JavaScript off the rule never
+   matches and everything is visible from the start. Whoever asks for reduced
+   motion gets the class on mount, and the block above kills the transition. */
+@media (scripting: enabled) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.7s var(--ease-out) var(--reveal-delay, 0s),
+      transform 0.7s var(--ease-out) var(--reveal-delay, 0s);
+
+    &.reveal_seen {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
 .section {
   & .section__inner {
     max-width: var(--site-max-width);

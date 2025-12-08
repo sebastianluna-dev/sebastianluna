@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Reveal } from "@/components/site/shared/reveal.comp";
 import { messageList } from "@/lib/message-list";
 import "./about.section.css";
 
@@ -14,12 +15,12 @@ export function AboutSection() {
   return (
     <section id="sobre-mi" className="section about">
       <div className="section__inner about__inner">
-        <div className="about__head">
+        <Reveal className="about__head">
           <h2 className="section-title">{t("title")}</h2>
           <p className="eyebrow about__subtitle">{t("subtitle")}</p>
           <p className="eyebrow about__subtitle about__subtitle_short">{tHero("role")}</p>
-        </div>
-        <div className="about__body">
+        </Reveal>
+        <Reveal className="about__body" delay={0.08}>
           <ul className="about__tags" aria-label={t("subtitle")}>
             {tags.map((tag) => (
               <li key={tag} className="about__tag">
@@ -33,7 +34,7 @@ export function AboutSection() {
               {paragraph}
             </p>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );

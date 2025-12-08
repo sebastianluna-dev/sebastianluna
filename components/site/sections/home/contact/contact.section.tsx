@@ -1,5 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import { PillLink } from "@/components/site/shared/pill-link.comp";
+import { Reveal } from "@/components/site/shared/reveal.comp";
 import { CV_FILES, PROFILE } from "@/constants/profile.const";
 import "./contact.section.css";
 
@@ -12,7 +13,7 @@ export function ContactSection() {
   return (
     <section id="contacto" className="section contact">
       <div className="section__inner">
-        <div className="contact__card">
+        <Reveal className="contact__card">
           <div className="contact__copy">
             <p className="eyebrow eyebrow_tone_cocoa contact__eyebrow">{t("eyebrow")}</p>
             <h2 className="section-title contact__title">{t("title")}</h2>
@@ -45,7 +46,7 @@ export function ContactSection() {
               {tCommon("downloadCv")} <span aria-hidden="true">↓</span>
             </a>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -6,11 +6,13 @@
   padding: clamp(34px, 4.6vw, 64px) 0;
   border-bottom: 1px solid var(--color-line-soft);
 
-  &:nth-child(even) {
+  /* The list item is the reveal wrapper now, so the mirroring and the last
+     card's missing rule count on it, not on the card itself. */
+  .projects__item:nth-child(even) & {
     flex-direction: row-reverse;
   }
 
-  &:last-child {
+  .projects__item:last-child & {
     border-bottom: 0;
   }
 
@@ -119,11 +121,11 @@
     padding: 0;
     border-bottom: 0;
 
-    &:nth-child(even) {
+    .projects__item:nth-child(even) & {
       flex-direction: column;
     }
 
-    &:not(:first-child) {
+    .projects__item:not(:first-child) & {
       padding-top: 26px;
       border-top: 1px solid var(--color-line);
     }

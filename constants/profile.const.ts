@@ -10,10 +10,14 @@ export const PROFILE = {
   portrait: { src: "/images/retrato-sebastian-luna.png", width: 900, height: 1200 },
 } as const;
 
-/** The CV, one PDF per language, served from public/. */
+/**
+ * The CV, one PDF per language, served from public/. A folder per locale
+ * rather than a suffix so both downloads land with the same filename, which
+ * is what the recruiter ends up with on disk.
+ */
 export const CV_FILES: Record<Locale, string> = {
-  es: "/cv/sebastian-luna-es.pdf",
-  en: "/cv/sebastian-luna-en.pdf",
+  es: "/cv/es/cv-sebastian-luna-senior-frontend-developer.pdf",
+  en: "/cv/en/cv-sebastian-luna-senior-frontend-developer.pdf",
 };
 
 /** The figures of the hero; their labels are `hero.stats.<key>` in messages. */

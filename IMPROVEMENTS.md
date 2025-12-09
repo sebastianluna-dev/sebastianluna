@@ -10,14 +10,14 @@ Backlog of the project's technical debt and improvements. Every entry carries an
 
 ## HIGH priority
 
-### 1. Confirm the domains and the Vallarta WKND screenshot — [Content]
+### 1. Confirm the domains of Reto MD and Cuarteto Fratres — [Content]
 
-Three of the four projects have `url: null` in `constants/projects.const.ts`: the card prints
-«Dominio por confirmar» and shows no «Visitar el sitio» button. Vallarta WKND also has
-`image: null` and shows the amber placeholder, so its browser window — and with it the
-«Vallarta WKND» and «Reservas» tabs — never renders. Once the products' public URLs are
-confirmed, set them (the domain line, the button and the browser frame's address bar follow),
-and add a 1600 px JPEG of Vallarta's home to `public/images`.
+Both still have `url: null` in `constants/projects.const.ts`, so their cards print «Dominio por
+confirmar» and show no «Visitar el sitio» button. Once the public URLs are confirmed, set them:
+the domain line, the button and the browser frame's address bar all follow from that one field.
+
+Vallarta WKND is done: it points at `https://vallartawknd.vercel.app`. If it later moves to a
+domain of its own, this is the only place to change.
 
 ## LOW priority
 
@@ -35,6 +35,11 @@ across a reload — and document here if it behaves differently.
 ---
 
 ## Resolved
+
+### The Vallarta WKND screenshot — [Content] · resolved 2025-12-09
+
+Its card showed the amber placeholder and, with no browser window, its tabs never rendered.
+`public/images/vallarta-wknd.jpg` is the home at 1600 px, the same cut as the other three.
 
 ### The CV files — [Content] · resolved 2025-12-08
 

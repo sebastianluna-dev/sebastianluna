@@ -46,7 +46,7 @@ export const PROJECTS: readonly Project[] = [
   {
     slug: "vallarta-wknd",
     tabs: ["Vallarta WKND"],
-    url: null,
-    image: null,
+    url: "https://vallartawknd.vercel.app",
+    image: { src: "/images/vallarta-wknd.jpg", width: 1600, height: 900 },
   },
 ];

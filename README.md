@@ -51,16 +51,17 @@ Lo que no cambia con el idioma está en `constants/`:
 - `projects.const.ts`: los cuatro productos en orden, con su URL pública (si la hay) y su captura. Los textos de cada uno están en `projects.items.<slug>` de los mensajes; un proyecto sin URL muestra «Dominio por confirmar» y sin botón; uno sin captura muestra una tarjeta ámbar de «Captura pendiente».
 - `navigation.const.ts`: las anclas.
 
-Las imágenes están en `public/images` (JPEG de las capturas a 1600 px; el retrato es PNG con transparencia, recortado sobre la tarjeta ámbar) y las fuentes en `public/fonts` (Archivo variable, IBM Plex Mono e Instrument Serif itálica, subconjuntos latinos de Google Fonts servidos en local desde `app/[locale]/fonts.ts`).
+Las imágenes están en `public/images` (JPEG de las capturas a 1600 px; el retrato es PNG con transparencia, recortado sobre la tarjeta ámbar) y las fuentes en `public/fonts` (Archivo variable, IBM Plex Mono e Instrument Serif itálica, subconjuntos latinos de Google Fonts servidos en local desde `app/[locale]/fonts.ts`). En esa misma carpeta están `archivo-400.ttf` y `archivo-600.ttf`, que no sirve el navegador: los lee la imagen Open Graph, porque Satori no admite woff2.
 
-Los archivos del CV (`public/cv/sebastian-luna-es.pdf` y `-en.pdf`) no están en el repositorio todavía: los botones «Descargar CV» ya apuntan a esas rutas.
+Los archivos del CV están en `public/cv/<idioma>/cv-sebastian-luna-senior-frontend-developer.pdf`, uno por idioma (`CV_FILES` en `constants/profile.const.ts`). Una carpeta por idioma en vez de un sufijo, para que las dos descargas lleguen al disco con el mismo nombre.
 
 ## Arquitectura en breve
 
-- **`app/[locale]/`**: layout (fuentes, metadatos con canónica y `hreflang`, proveedor de next-intl), `page.tsx`, `landing-page.tsx` (compone las secciones según `config/site.config.ts`), la 404 y `globals.css` (tokens y clases compartidas). `robots.ts`, `sitemap.ts` e `icon.svg` quedan en `app/`.
+- **`app/[locale]/`**: layout (fuentes, metadatos con canónica y `hreflang`, proveedor de next-intl), `page.tsx`, `landing-page.tsx` (compone las secciones según `config/site.config.ts`), la 404 y `globals.css` (tokens y clases compartidas). `opengraph-image.tsx` dibuja con `ImageResponse` la tarjeta que se ve al compartir el sitio, una por idioma y en tiempo de build. `robots.ts`, `sitemap.ts` e `icon.svg` quedan en `app/`.
 - **`proxy.ts`** e **`i18n/`**: rutas por idioma (`routing.ts`), carga de mensajes por petición (`request.ts`) y `Link`/`usePathname` conscientes del idioma (`navigation.ts`).
 - **`components/site/sections/`**: `shell/` (cabecera con el menú del teléfono, pie) y `home/` (una carpeta por sección: `hero`, `projects`, `about`, `contact`). Cada `.section.tsx` o `.comp.tsx` importa su propio `.css`.
-- **`components/site/shared/`**: piezas que usan varias secciones: la píldora con icono redondo, el anillo de redes, la ventana de navegador dibujada en CSS y el selector de idioma.
+- **`components/site/shared/`**: piezas que usan varias secciones: la píldora con icono redondo, el anillo de redes, la ventana de navegador dibujada en CSS, el selector de idioma y `Reveal`, el envoltorio que hace aparecer un bloque la primera vez que entra en pantalla.
+- **`hooks/`**: `use-reveal.hook.ts`, el `IntersectionObserver` detrás de `Reveal`.
 - **`lib/`**: funciones puras con test al lado (`*.test.ts`).
 - **`constants/`** y **`messages/`**: el contenido (ver arriba).
 

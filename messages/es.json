@@ -50,7 +50,7 @@
         "description": "Frontend de los productos de Reto MD, la app con la que estudiantes de medicina preparan el ENARM. Sitio corporativo en Next.js y unificación de todas las especialidades en una arquitectura multi-tenant: un repositorio, seis despliegues.",
         "stack": "Next.js · TypeScript · Tailwind · next-intl · Firebase · TanStack Query · Vercel · SEO",
         "imageAlt": "Página de inicio de Reto Pediatría",
-        "tabs": ["Reto Pediatría", "+ 7 sitios de la red"]
+        "extraTabs": ["+ 7 sitios de la red"]
       },
       "365-dias-de-ajedrez": {
         "kicker": "Academia online · proyecto propio",
@@ -58,7 +58,7 @@
         "description": "Academia y plataforma propias: cursos por capítulos, tablero interactivo con variantes y entrenamiento de aperturas. Defino el producto, diseño las pantallas y las construyo.",
         "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Vitest · Vercel",
         "imageAlt": "Página de inicio de 365 Días de Ajedrez",
-        "tabs": ["365 Días de Ajedrez", "Método 365"]
+        "extraTabs": []
       },
       "cuarteto-fratres": {
         "kicker": "Sitio del cuarteto",
@@ -66,7 +66,7 @@
         "description": "Sitio de un cuarteto de cuerdas y su material para contrataciones: próximas fechas, semblanzas, repertorio con reproductor y formulario de contacto. El grupo edita todo el contenido desde un CMS.",
         "stack": "Next.js · TypeScript · Payload CMS · PostgreSQL · Vitest · Vercel",
         "imageAlt": "Página de inicio del sitio del Cuarteto Fratres: titular sobre fondo oscuro, retrato del cuarteto y próximas fechas de concierto",
-        "tabs": ["Cuarteto Fratres"]
+        "extraTabs": []
       },
       "vallarta-wknd": {
         "kicker": "Turismo · reservas y pagos",
@@ -74,7 +74,7 @@
         "description": "Sitio turístico de principio a fin: investigación, wireframes, diseño y frontend, con reservas, pagos y disponibilidad sobre Shopify.",
         "stack": "Shopify · Liquid · JavaScript · Reservas · Pagos · Disponibilidad",
         "imageAlt": "Captura del sitio de Vallarta WKND",
-        "tabs": ["Vallarta WKND", "Reservas"]
+        "extraTabs": ["Reservas"]
       }
     }
   },

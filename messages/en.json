@@ -50,7 +50,7 @@
         "description": "Frontend of the Reto MD products, the app medical students use to prepare for the ENARM residency exam. Corporate site in Next.js and every specialty unified under a multi-tenant architecture: one repository, six deployments.",
         "stack": "Next.js · TypeScript · Tailwind · next-intl · Firebase · TanStack Query · Vercel · SEO",
         "imageAlt": "Home page of Reto Pediatría",
-        "tabs": ["Reto Pediatría", "+ 7 sites in the network"]
+        "extraTabs": ["+ 7 sites in the network"]
       },
       "365-dias-de-ajedrez": {
         "kicker": "Online academy · own project",
@@ -58,7 +58,7 @@
         "description": "My own chess academy and platform: courses by chapter, an interactive board with variations and opening training. I define the product, design the screens and build them.",
         "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Vitest · Vercel",
         "imageAlt": "Home page of 365 Días de Ajedrez",
-        "tabs": ["365 Días de Ajedrez", "Método 365"]
+        "extraTabs": []
       },
       "cuarteto-fratres": {
         "kicker": "String quartet website",
@@ -66,7 +66,7 @@
         "description": "Website of a string quartet and its booking material: upcoming dates, member profiles, repertoire with a player and a contact form. The group edits all the content from a CMS.",
         "stack": "Next.js · TypeScript · Payload CMS · PostgreSQL · Vitest · Vercel",
         "imageAlt": "Home page of the Cuarteto Fratres site: headline on a dark background, portrait of the quartet and upcoming concert dates",
-        "tabs": ["Cuarteto Fratres"]
+        "extraTabs": []
       },
       "vallarta-wknd": {
         "kicker": "Tourism · bookings and payments",
@@ -74,7 +74,7 @@
         "description": "A tourism site from start to finish: research, wireframes, design and frontend, with bookings, payments and availability on Shopify.",
         "stack": "Shopify · Liquid · JavaScript · Bookings · Payments · Availability",
         "imageAlt": "Screenshot of the Vallarta WKND site",
-        "tabs": ["Vallarta WKND", "Bookings"]
+        "extraTabs": ["Bookings"]
       }
     }
   },

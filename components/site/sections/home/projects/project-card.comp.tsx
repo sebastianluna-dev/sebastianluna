@@ -18,11 +18,12 @@ interface ProjectCardProps {
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const t = useTranslations("projects");
   const tItem = useTranslations(`projects.items.${project.slug}`);
-  const tabs = messageList(tItem.raw("tabs"));
+  // The product's own names first, then the tabs that are copy.
+  const tabs = [...project.tabs, ...messageList(tItem.raw("extraTabs"))];
   const domain = project.url ? displayUrl(project.url) : null;
 
   return (
-    <li className="project-card">
+    <article className="project-card">
       <div className="project-card__copy">
         <p className="project-card__kicker">
           <span className="project-card__index">{formatIndex(index)}</span>
@@ -65,6 +66,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           </div>
         )}
       </div>
-    </li>
+    </article>
   );
 }

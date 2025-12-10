@@ -3,25 +3,14 @@
 Backlog of the project's technical debt and improvements. Every entry carries an **area**, a
 **priority** (low · medium · high) and a guide on how to approach it.
 
-> Last review: 2025-12-08. What is still open is at the top; what is already resolved is left
+> Last review: 2025-12-10. What is still open is at the top; what is already resolved is left
 > noted with what was done, so it is not reopened.
 
 ---
 
-## HIGH priority
-
-### 1. Confirm the domains of Reto MD and Cuarteto Fratres — [Content]
-
-Both still have `url: null` in `constants/projects.const.ts`, so their cards print «Dominio por
-confirmar» and show no «Visitar el sitio» button. Once the public URLs are confirmed, set them:
-the domain line, the button and the browser frame's address bar all follow from that one field.
-
-Vallarta WKND is done: it points at `https://vallartawknd.vercel.app`. If it later moves to a
-domain of its own, this is the only place to change.
-
 ## LOW priority
 
-### 2. Language negotiation only on the first visit — [i18n]
+### 1. Language negotiation only on the first visit — [i18n]
 
 `proxy.ts` runs next-intl's middleware with `localePrefix: "as-needed"`: a request with no prefix
 is negotiated against `Accept-Language` and the choice is remembered in a cookie. So a visitor
@@ -35,6 +24,12 @@ across a reload — and document here if it behaves differently.
 ---
 
 ## Resolved
+
+### The domains and the screenshots — [Content] · resolved 2025-12-10
+
+Three of the four cards printed «Dominio por confirmar» and showed no «Visitar el sitio» button.
+Reto MD, Cuarteto Fratres and Vallarta WKND now carry their public URL, and the first two also
+got a fresh capture of the live home page, at the same 1600 px cut as the rest.
 
 ### The Vallarta WKND screenshot — [Content] · resolved 2025-12-09
 

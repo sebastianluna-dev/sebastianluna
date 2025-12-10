@@ -28,8 +28,8 @@ export const PROJECTS: readonly Project[] = [
   {
     slug: "reto-md",
     tabs: ["Reto Pediatría"],
-    url: null,
-    image: { src: "/images/reto-md.jpg", width: 1600, height: 977 },
+    url: "https://retomd.com",
+    image: { src: "/images/reto-md.jpg", width: 1600, height: 900 },
   },
   {
     slug: "365-dias-de-ajedrez",
@@ -40,7 +40,7 @@ export const PROJECTS: readonly Project[] = [
   {
     slug: "cuarteto-fratres",
     tabs: ["Cuarteto Fratres"],
-    url: null,
+    url: "https://cuartetofratres.com",
     image: { src: "/images/cuarteto-fratres.jpg", width: 1600, height: 900 },
   },
   {

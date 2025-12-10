@@ -49,7 +49,7 @@
         "title": "reto md",
         "description": "Frontend de los productos de Reto MD, la app con la que estudiantes de medicina preparan el ENARM. Sitio corporativo en Next.js y unificación de todas las especialidades en una arquitectura multi-tenant: un repositorio, seis despliegues.",
         "stack": "Next.js · TypeScript · Tailwind · next-intl · Firebase · TanStack Query · Vercel · SEO",
-        "imageAlt": "Página de inicio de Reto Pediatría",
+        "imageAlt": "Página de inicio de Reto MD",
         "extraTabs": ["+ 7 sitios de la red"]
       },
       "365-dias-de-ajedrez": {

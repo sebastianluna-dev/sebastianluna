@@ -27,7 +27,7 @@ export interface Project {
 export const PROJECTS: readonly Project[] = [
   {
     slug: "reto-md",
-    tabs: ["Reto Pediatría"],
+    tabs: ["Reto MD"],
     url: "https://retomd.com",
     image: { src: "/images/reto-md.jpg", width: 1600, height: 900 },
   },

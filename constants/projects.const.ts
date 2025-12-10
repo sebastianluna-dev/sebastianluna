@@ -26,12 +26,6 @@ export interface Project {
 
 export const PROJECTS: readonly Project[] = [
   {
-    slug: "reto-md",
-    tabs: ["Reto MD"],
-    url: "https://retomd.com",
-    image: { src: "/images/reto-md.jpg", width: 1600, height: 900 },
-  },
-  {
     slug: "365-dias-de-ajedrez",
     tabs: ["365 Días de Ajedrez", "Método 365"],
     url: "https://365diasdeajedrez.com",
@@ -42,6 +36,12 @@ export const PROJECTS: readonly Project[] = [
     tabs: ["Cuarteto Fratres"],
     url: "https://cuartetofratres.com",
     image: { src: "/images/cuarteto-fratres.jpg", width: 1600, height: 900 },
+  },
+  {
+    slug: "reto-md",
+    tabs: ["Reto MD"],
+    url: "https://retomd.com",
+    image: { src: "/images/reto-md.jpg", width: 1600, height: 900 },
   },
   {
     slug: "vallarta-wknd",

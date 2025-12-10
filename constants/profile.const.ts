@@ -4,11 +4,16 @@ import type { Locale } from "@/i18n/routing";
 // them lives in messages/.
 export const PROFILE = {
   name: "Sebastian Luna",
-  email: "contacto@sebastianluna.dev",
   linkedin: "https://www.linkedin.com/in/sebastianlunarodriguez",
   github: "https://github.com/sebastianluna-dev",
   portrait: { src: "/images/retrato-sebastian-luna.png", width: 900, height: 1200 },
 } as const;
+
+/** The address to write to, one per language; both reach the same inbox. */
+export const CONTACT_EMAILS: Record<Locale, string> = {
+  es: "contacto@sebastianluna.dev",
+  en: "contact@sebastianluna.dev",
+};
 
 /**
  * The CV, one PDF per language, served from public/. A folder per locale

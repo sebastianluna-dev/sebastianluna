@@ -47,7 +47,7 @@ Todo lo que lee el visitante está en `messages/es.json` y `messages/en.json`, c
 
 Lo que no cambia con el idioma está en `constants/`:
 
-- `profile.const.ts`: nombre, correo, LinkedIn, GitHub, retrato, rutas del CV por idioma (`CV_FILES`), las cifras del inicio (`STATS`) y el año del portafolio.
+- `profile.const.ts`: nombre, LinkedIn, GitHub, retrato, el correo y las rutas del CV por idioma (`CONTACT_EMAILS` y `CV_FILES`), las cifras del inicio (`STATS`) y el año del portafolio.
 - `projects.const.ts`: los cuatro productos en orden, con su URL pública (si la hay) y su captura. Los textos de cada uno están en `projects.items.<slug>` de los mensajes; un proyecto sin URL muestra «Dominio por confirmar» y sin botón; uno sin captura muestra una tarjeta ámbar de «Captura pendiente».
 - `navigation.const.ts`: las anclas.
 

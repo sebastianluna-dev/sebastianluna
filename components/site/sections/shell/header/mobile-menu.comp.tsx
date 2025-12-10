@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useRef } from "react";
 import { PillLink } from "@/components/site/shared/pill-link.comp";
 import { NAV_ITEMS } from "@/constants/navigation.const";
-import { CV_FILES, PROFILE } from "@/constants/profile.const";
+import { CONTACT_EMAILS, CV_FILES, PROFILE } from "@/constants/profile.const";
 import { formatIndex } from "@/lib/format-index";
 import "./mobile-menu.comp.css";
 
@@ -55,7 +55,7 @@ export function MobileMenu() {
             <a href={PROFILE.github} target="_blank" rel="noopener noreferrer">
               {tCommon("github")} ↗
             </a>
-            <a href={`mailto:${PROFILE.email}`}>{tCommon("email")} ↗</a>
+            <a href={`mailto:${CONTACT_EMAILS[locale]}`}>{tCommon("email")} ↗</a>
           </div>
         </div>
       </dialog>

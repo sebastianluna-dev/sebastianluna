@@ -28,9 +28,9 @@ export const CV_FILES: Record<Locale, string> = {
 /** The figures of the hero; their labels are `hero.stats.<key>` in messages. */
 export const STATS = [
   { key: "years", value: 6, approximate: true },
-  { key: "products", value: 4, approximate: true },
-  { key: "lighthouse", value: 99, approximate: false },
-  { key: "deploys", value: 6, approximate: false },
+  { key: "projects", value: 50, approximate: true },
+  { key: "products", value: 15, approximate: false },
+  { key: "industries", value: 5, approximate: true },
 ] as const;
 
 export const PORTFOLIO_YEAR = 2026;

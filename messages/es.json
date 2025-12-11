@@ -31,10 +31,10 @@
     "lead": "Diseño la interfaz, escribo el código y me quedo hasta que el producto está en producción. Fundador de <strong>365 Días de Ajedrez</strong>.",
     "portraitAlt": "Retrato de Sebastian Luna",
     "stats": {
-      "years": "Años en diseño de interfaz y frontend",
-      "products": "Productos en producción",
-      "lighthouse": "Rendimiento en Lighthouse, con 100 en accesibilidad",
-      "deploys": "Despliegues desde un mismo repositorio en Reto MD"
+      "years": "Años de desarrollo frontend",
+      "projects": "Proyectos en los que he participado",
+      "products": "Productos construidos de principio a fin",
+      "industries": "Industrias para las que he trabajado"
     }
   },
   "projects": {

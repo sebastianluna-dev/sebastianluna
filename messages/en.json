@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Sebastian Luna | Frontend developer",
-    "description": "Portfolio of Sebastian Luna, frontend developer based in Boca del Río, Veracruz. I design the interface, write the code and stay until the product is in production."
+    "title": "Sebastian Luna | Senior Frontend developer",
+    "description": "Portfolio of Sebastian Luna, senior frontend developer based in Boca del Río, Veracruz. I design the interface, write the code and stay until the product is in production."
   },
   "common": {
     "skipToContent": "Skip to content",
@@ -27,7 +27,7 @@
     "available": "Open to opportunities",
     "availableShort": "Available",
     "name": "sebastian<br></br>luna",
-    "role": "Frontend developer",
+    "role": "Senior Frontend developer",
     "lead": "I design the interface, write the code and stay until the product is in production. Founder of <strong>365 Días de Ajedrez</strong>.",
     "portraitAlt": "Portrait of Sebastian Luna",
     "stats": {
@@ -95,7 +95,7 @@
     "location": "Boca del Río, Veracruz (MX) · remote · open to relocation"
   },
   "footer": {
-    "signature": "Sebastian Luna · Frontend developer",
+    "signature": "Sebastian Luna · Senior Frontend developer",
     "signatureShort": "Sebastian Luna"
   },
   "notFound": {

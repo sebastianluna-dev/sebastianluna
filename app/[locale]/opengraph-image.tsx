@@ -22,7 +22,7 @@ const COLOR = {
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 /* The role reads the same in both catalogues, so one alt serves the two. */
-export const alt = `${PROFILE.name} — Frontend developer`;
+export const alt = `${PROFILE.name} — Senior Frontend developer`;
 
 // The image route does not inherit the layout's params: without this it would
 // be rendered on demand instead of once per locale at build time.

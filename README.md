@@ -1,6 +1,6 @@
 # Sebastian Luna · portafolio
 
-Sitio personal de **Sebastian Luna**, frontend developer en Boca del Río, Veracruz. Una sola página en Next.js con cuatro bloques: presentación, proyectos en producción, sobre mí y contacto. Está en español y en inglés (`/` y `/en`); no hay CMS ni base de datos: el contenido vive en el repositorio y el sitio se sirve estático.
+Sitio personal de **Sebastian Luna**, senior frontend developer en Boca del Río, Veracruz. Una sola página en Next.js con cuatro bloques: presentación, proyectos en producción, sobre mí y contacto. Está en español y en inglés (`/` y `/en`); no hay CMS ni base de datos: el contenido vive en el repositorio y el sitio se sirve estático.
 
 ## Requisitos
 

@@ -58,6 +58,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               width={project.image.width}
               height={project.image.height}
               sizes="(max-width: 767px) 100vw, (max-width: 1280px) 55vw, 720px"
+              quality={100}
             />
           </BrowserFrame>
         ) : (

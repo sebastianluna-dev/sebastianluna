@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   images: {
     // AVIF first: the screenshots are flat UI where it wins clearly over WebP.
     formats: ["image/avif", "image/webp"],
+    // Next 16 only allows 75 unless the levels are listed: without this, the
+    // `quality={100}` of the screenshots and the portrait is coerced back down.
+    qualities: [75, 100],
   },
 };
 

@@ -43,6 +43,7 @@ export function HeroSection() {
             width={PROFILE.portrait.width}
             height={PROFILE.portrait.height}
             sizes="(max-width: 767px) 60vw, 380px"
+            quality={100}
             priority
           />
           <span className="hero__badge" aria-hidden="true">

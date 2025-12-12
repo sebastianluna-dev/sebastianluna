@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-muted);
@@ -33,9 +33,5 @@
       color: var(--color-ink);
       border-bottom-color: var(--color-ink);
     }
-  }
-
-  @media (max-width: 767px) {
-    font-size: 11px;
   }
 }

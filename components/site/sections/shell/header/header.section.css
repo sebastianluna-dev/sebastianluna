@@ -36,8 +36,11 @@
     }
   }
 
+  /* Bigger than the shared `eyebrow` it rides on, which the sections still
+     use at its own size. */
   & .header__label {
     margin-left: auto;
+    font-size: 14px;
     letter-spacing: 0.14em;
   }
 

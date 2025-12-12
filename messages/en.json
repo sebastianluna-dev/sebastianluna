@@ -55,8 +55,8 @@
       "365-dias-de-ajedrez": {
         "kicker": "Online academy · own project",
         "title": "365 días de ajedrez",
-        "description": "My own chess academy and platform: courses by chapter, an interactive board with variations and opening training. I define the product, design the screens and build them.",
-        "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Vitest · Vercel",
+        "description": "My own chess academy and platform, brought together in a single Next.js app: the public site with its blog, the CMS that feeds it and the students' private area. Courses by chapter, classes, annotated game studies, an opening trainer and an explorer that searches by position, all built on PGN. Access is bespoke: no public sign-up, sessions kept in the database and three roles — student, teacher and administration. I define the product, design the screens and build them.",
+        "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
         "imageAlt": "Home page of 365 Días de Ajedrez",
         "extraTabs": []
       },

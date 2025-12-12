@@ -24,7 +24,7 @@ export function HeroSection() {
           </span>
           <h1 className="hero__name">{t.rich("name", { br: () => <br /> })}</h1>
           <p className="eyebrow eyebrow_tone_rust hero__role">{t("role")}</p>
-          <p className="hero__lead">{t.rich("lead", { strong: (chunks) => <strong>{chunks}</strong> })}</p>
+          <p className="hero__lead">{t("lead")}</p>
           <div className="hero__actions">
             <PillLink href={CV_FILES[locale]} icon="download">
               {tCommon("downloadCv")}

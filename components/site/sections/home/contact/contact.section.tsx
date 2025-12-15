@@ -40,10 +40,10 @@ export function ContactSection() {
             >
               {tCommon("github")} ↗
             </a>
-            <PillLink className="contact__cv" href={CV_FILES[locale]} icon="download" variant="paper">
+            <PillLink className="contact__cv" href={CV_FILES[locale]} icon="download" variant="paper" download>
               {tCommon("downloadCv")}
             </PillLink>
-            <a className="contact__cv-plain" href={CV_FILES[locale]}>
+            <a className="contact__cv-plain" href={CV_FILES[locale]} download>
               {tCommon("downloadCv")} <span aria-hidden="true">↓</span>
             </a>
           </div>

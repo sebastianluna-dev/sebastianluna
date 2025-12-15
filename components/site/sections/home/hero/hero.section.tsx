@@ -26,7 +26,7 @@ export function HeroSection() {
           <p className="eyebrow eyebrow_tone_rust hero__role">{t("role")}</p>
           <p className="hero__lead">{t("lead")}</p>
           <div className="hero__actions">
-            <PillLink href={CV_FILES[locale]} icon="download">
+            <PillLink href={CV_FILES[locale]} icon="download" download>
               {tCommon("downloadCv")}
             </PillLink>
             <RingLink href={PROFILE.linkedin} mark="in" label={tCommon("linkedin")} />

@@ -45,7 +45,7 @@ export function MobileMenu() {
         </nav>
 
         <div className="mobile-menu__foot">
-          <PillLink href={CV_FILES[locale]} icon="download">
+          <PillLink href={CV_FILES[locale]} icon="download" download>
             {tCommon("downloadCv")}
           </PillLink>
           <div className="mobile-menu__social">

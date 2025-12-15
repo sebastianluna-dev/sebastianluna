@@ -20,6 +20,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
   const tItem = useTranslations(`projects.items.${project.slug}`);
   // The product's own names first, then the tabs that are copy.
   const tabs = [...project.tabs, ...messageList(tItem.raw("extraTabs"))];
+  const paragraphs = messageList(tItem.raw("description"));
   const domain = project.url ? displayUrl(project.url) : null;
 
   return (
@@ -39,7 +40,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         ) : (
           <p className="project-card__domain project-card__domain_pending">{t("domainPending")}</p>
         )}
-        <p className="project-card__description">{tItem("description")}</p>
+        {paragraphs.map((paragraph) => (
+          <p key={paragraph} className="project-card__description">
+            {paragraph}
+          </p>
+        ))}
         <p className="project-card__stack">{tItem("stack")}</p>
         {project.url && (
           <PillLink className="project-card__cta" href={project.url} icon="external" size="sm" external>

@@ -47,7 +47,9 @@
       "reto-md": {
         "kicker": "Network of medical sites",
         "title": "reto md",
-        "description": "Frontend of the Reto MD products, the app medical students use to prepare for the ENARM residency exam. Corporate site in Next.js and every specialty unified under a multi-tenant architecture: one repository, six deployments.",
+        "description": [
+          "Frontend of the Reto MD products, the app medical students use to prepare for the ENARM residency exam. Corporate site in Next.js and every specialty unified under a multi-tenant architecture: one repository, six deployments."
+        ],
         "stack": "Next.js · TypeScript · Tailwind · next-intl · Firebase · TanStack Query · Vercel · SEO",
         "imageAlt": "Home page of Reto MD",
         "extraTabs": ["+ 7 sites in the network"]
@@ -55,7 +57,11 @@
       "365-dias-de-ajedrez": {
         "kicker": "Online academy · own project",
         "title": "365 días de ajedrez",
-        "description": "My own chess academy and platform, brought together in a single Next.js app: the public site with its blog, the CMS that feeds it and the students' private area. Courses by chapter, classes, annotated game studies, an opening trainer and an explorer that searches by position, all built on PGN. Access is bespoke: no public sign-up, sessions kept in the database and three roles — student, teacher and administration. I define the product, design the screens and build them.",
+        "description": [
+          "I turned my experience as a chess coach into a platform for teaching, studying, and training. Built with Next.js, it brings together the academy’s public website, blog, CMS, and a private student area.",
+          "The platform connects courses and lessons with tools to explore the game in depth: annotated games, an opening trainer, and a position-based game explorer. PGN powers the chess content, with private access and dedicated permissions for students, teachers, and administrators.",
+          "I lead the project from product definition and interface design through implementation, turning my academy’s needs into a tailored digital experience."
+        ],
         "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
         "imageAlt": "Home page of 365 Días de Ajedrez",
         "extraTabs": []
@@ -63,7 +69,9 @@
       "cuarteto-fratres": {
         "kicker": "String quartet website",
         "title": "cuarteto fratres",
-        "description": "Website of a string quartet and its booking material: upcoming dates, member profiles, repertoire with a player and a contact form. The group edits all the content from a CMS.",
+        "description": [
+          "Website of a string quartet and its booking material: upcoming dates, member profiles, repertoire with a player and a contact form. The group edits all the content from a CMS."
+        ],
         "stack": "Next.js · TypeScript · Payload CMS · PostgreSQL · Vitest · Vercel",
         "imageAlt": "Home page of the Cuarteto Fratres site: headline on a dark background, portrait of the quartet and upcoming concert dates",
         "extraTabs": []
@@ -71,7 +79,9 @@
       "vallarta-wknd": {
         "kicker": "Tourism · bookings and payments",
         "title": "vallarta wknd",
-        "description": "A tourism site from start to finish: research, wireframes, design and frontend, with bookings, payments and availability on Shopify.",
+        "description": [
+          "A tourism site from start to finish: research, wireframes, design and frontend, with bookings, payments and availability on Shopify."
+        ],
         "stack": "Shopify · Liquid · JavaScript · Bookings · Payments · Availability",
         "imageAlt": "Screenshot of the Vallarta WKND site",
         "extraTabs": ["Bookings"]

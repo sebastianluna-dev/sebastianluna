@@ -47,7 +47,9 @@
       "reto-md": {
         "kicker": "Red de sitios médicos",
         "title": "reto md",
-        "description": "Frontend de los productos de Reto MD, la app con la que estudiantes de medicina preparan el ENARM. Sitio corporativo en Next.js y unificación de todas las especialidades en una arquitectura multi-tenant: un repositorio, seis despliegues.",
+        "description": [
+          "Frontend de los productos de Reto MD, la app con la que estudiantes de medicina preparan el ENARM. Sitio corporativo en Next.js y unificación de todas las especialidades en una arquitectura multi-tenant: un repositorio, seis despliegues."
+        ],
         "stack": "Next.js · TypeScript · Tailwind · next-intl · Firebase · TanStack Query · Vercel · SEO",
         "imageAlt": "Página de inicio de Reto MD",
         "extraTabs": ["+ 7 sitios de la red"]
@@ -55,7 +57,11 @@
       "365-dias-de-ajedrez": {
         "kicker": "Academia online · proyecto propio",
         "title": "365 días de ajedrez",
-        "description": "Academia y plataforma propias, reunidas en una sola app de Next.js: el sitio público con su blog, el CMS que lo alimenta y la zona privada de alumnos. Cursos por capítulos, clases, estudios de partidas anotadas, entrenador de aperturas y un explorador que busca por posición, todo construido sobre PGN. El acceso es a medida: sin registro público, con sesiones guardadas en base de datos y tres roles —alumno, profesor y administración—. Defino el producto, diseño las pantallas y las construyo.",
+        "description": [
+          "Transformé mi experiencia como entrenador de ajedrez en una plataforma propia para enseñar, estudiar y entrenar. Desarrollada con Next.js, integra el sitio público de la academia, su blog, un CMS y un espacio privado para alumnos.",
+          "La experiencia conecta cursos y clases con herramientas para profundizar en el juego: partidas anotadas, un entrenador de aperturas y un explorador de partidas por posición. El formato PGN es la base del contenido ajedrecístico, con acceso privado y permisos para alumnos, profesores y administración.",
+          "Lidero el proyecto desde la definición del producto y el diseño de las pantallas hasta su implementación, convirtiendo las necesidades de mi academia en una experiencia digital hecha a medida."
+        ],
         "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
         "imageAlt": "Página de inicio de 365 Días de Ajedrez",
         "extraTabs": []
@@ -63,7 +69,9 @@
       "cuarteto-fratres": {
         "kicker": "Sitio del cuarteto",
         "title": "cuarteto fratres",
-        "description": "Sitio de un cuarteto de cuerdas y su material para contrataciones: próximas fechas, semblanzas, repertorio con reproductor y formulario de contacto. El grupo edita todo el contenido desde un CMS.",
+        "description": [
+          "Sitio de un cuarteto de cuerdas y su material para contrataciones: próximas fechas, semblanzas, repertorio con reproductor y formulario de contacto. El grupo edita todo el contenido desde un CMS."
+        ],
         "stack": "Next.js · TypeScript · Payload CMS · PostgreSQL · Vitest · Vercel",
         "imageAlt": "Página de inicio del sitio del Cuarteto Fratres: titular sobre fondo oscuro, retrato del cuarteto y próximas fechas de concierto",
         "extraTabs": []
@@ -71,7 +79,9 @@
       "vallarta-wknd": {
         "kicker": "Turismo · reservas y pagos",
         "title": "vallarta wknd",
-        "description": "Sitio turístico de principio a fin: investigación, wireframes, diseño y frontend, con reservas, pagos y disponibilidad sobre Shopify.",
+        "description": [
+          "Sitio turístico de principio a fin: investigación, wireframes, diseño y frontend, con reservas, pagos y disponibilidad sobre Shopify."
+        ],
         "stack": "Shopify · Liquid · JavaScript · Reservas · Pagos · Disponibilidad",
         "imageAlt": "Captura del sitio de Vallarta WKND",
         "extraTabs": ["Reservas"]

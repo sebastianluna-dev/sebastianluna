@@ -11,11 +11,15 @@
   font-size: 15px;
   transition:
     background 0.2s,
+    border-color 0.2s,
     color 0.2s;
 
+  /* The ring fills: its border takes the same ink, so the outline disappears
+     into the disc instead of framing it. */
   &:hover,
   &:focus-visible {
     background: var(--color-ink);
+    border-color: var(--color-ink);
     color: var(--color-text-on-ink);
   }
 }

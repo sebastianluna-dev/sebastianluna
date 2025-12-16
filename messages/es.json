@@ -58,9 +58,10 @@
         "kicker": "Academia online · proyecto propio",
         "title": "365 días de ajedrez",
         "description": [
-          "Transformé mi experiencia como entrenador de ajedrez en una plataforma propia para enseñar, estudiar y entrenar. Desarrollada con Next.js, integra el sitio público de la academia, su blog, un CMS y un espacio privado para alumnos.",
-          "La experiencia conecta cursos y clases con herramientas para profundizar en el juego: partidas anotadas, un entrenador de aperturas y un explorador de partidas por posición. El formato PGN es la base del contenido ajedrecístico, con acceso privado y permisos para alumnos, profesores y administración.",
-          "Lidero el proyecto desde la definición del producto y el diseño de las pantallas hasta su implementación, convirtiendo las necesidades de mi academia en una experiencia digital hecha a medida."
+          "Transformé mi experiencia como entrenador de ajedrez en una plataforma propia que reúne enseñanza, estudio y entrenamiento en un solo lugar.",
+          "Desarrollada con Next.js, React y TypeScript, conecta cursos y clases con herramientas para profundizar en el juego: bases de datos de partidas, un entrenador de movimientos, resolución de problemas y tableros de análisis. Cada usuario cuenta con funciones y permisos específicos según su rol: alumno, maestro o administrador.",
+          "La información centralizada me permite comprender mejor las necesidades de cada alumno, identificar dificultades de aprendizaje y detectar errores recurrentes. Estos hallazgos orientan tanto el acompañamiento individual como la mejora continua del programa y sus contenidos.",
+          "Lidero el proyecto desde la definición del producto y el diseño de las pantallas hasta su implementación, convirtiendo las necesidades de mi academia en una experiencia digital hecha a la medida."
         ],
         "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
         "imageAlt": "Página de inicio de 365 Días de Ajedrez",

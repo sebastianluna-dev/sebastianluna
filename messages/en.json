@@ -58,8 +58,9 @@
         "kicker": "Online academy · own project",
         "title": "365 días de ajedrez",
         "description": [
-          "I turned my experience as a chess coach into a platform for teaching, studying, and training. Built with Next.js, it brings together the academy’s public website, blog, CMS, and a private student area.",
-          "The platform connects courses and lessons with tools to explore the game in depth: annotated games, an opening trainer, and a position-based game explorer. PGN powers the chess content, with private access and dedicated permissions for students, teachers, and administrators.",
+          "I turned my experience as a chess coach into a platform of my own that brings teaching, study, and training together in one place.",
+          "Built with Next.js, React, and TypeScript, it connects courses and lessons with tools to explore the game in depth: game databases, a move trainer, puzzle solving, and analysis boards. Every user gets the features and permissions of their role: student, teacher, or administrator.",
+          "Having everything in one place helps me understand what each student needs, spot learning difficulties, and catch recurring mistakes. Those findings guide both the one-to-one coaching and the continuous improvement of the programme and its content.",
           "I lead the project from product definition and interface design through implementation, turning my academy’s needs into a tailored digital experience."
         ],
         "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",

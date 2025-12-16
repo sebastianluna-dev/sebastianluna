@@ -58,10 +58,10 @@
         "kicker": "Online academy · own project",
         "title": "365 días de ajedrez",
         "description": [
-          "I turned my experience as a chess coach into a platform of my own for teaching, studying, and training in one place.",
-          "Built with Next.js, React, and TypeScript, it connects courses and lessons with game databases, a move trainer, puzzles, and analysis boards, with features and permissions of their own for students, teachers, and administrators.",
-          "Having the information in one place lets me identify what each student needs and spot recurring difficulties, so I can tailor the teaching and improve the programme and its content.",
-          "I lead the project from product definition and design through implementation, turning my academy’s needs into a tailored digital experience."
+          "I turned my experience as a chess coach into a platform that brings my academy’s teaching, study, and training into one digital experience.",
+          "Powered by Next.js, React, and TypeScript, it combines courses and classes with game databases, a move trainer, puzzles, and analysis boards, with role-based access for students, instructors, and administrators.",
+          "Having student information in one place helps me spot individual learning needs and common challenges, tailor my coaching, and improve the program and learning materials.",
+          "I own the full product lifecycle, from defining requirements and designing the experience to building a platform around the way my academy works."
         ],
         "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
         "imageAlt": "Home page of 365 Días de Ajedrez",

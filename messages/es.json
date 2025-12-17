@@ -71,9 +71,12 @@
         "kicker": "Sitio del cuarteto",
         "title": "cuarteto fratres",
         "description": [
-          "Sitio de un cuarteto de cuerdas y su material para contrataciones: próximas fechas, semblanzas, repertorio con reproductor y formulario de contacto. El grupo edita todo el contenido desde un CMS."
+          "Diseñé y desarrollé el sitio del Cuarteto Fratres para presentar su propuesta musical y facilitar contrataciones para conciertos, bodas y eventos privados.",
+          "Construido con Next.js, React, TypeScript y Payload CMS sobre PostgreSQL, reúne próximas fechas, perfiles de los músicos, repertorio y contacto. El grupo actualiza el contenido y gestiona solicitudes de forma independiente.",
+          "Organicé la experiencia en una sola página para facilitar el recorrido desde conocer al cuarteto hasta contactarlo, con una identidad visual basada en fotografía en blanco y negro y acentos lima.",
+          "Me encargué de todo el proyecto: producto, diseño, desarrollo, modelado del CMS y despliegue."
         ],
-        "stack": "Next.js · TypeScript · Payload CMS · PostgreSQL · Vitest · Vercel",
+        "stack": "Next.js · React · TypeScript · Payload CMS · PostgreSQL · Vercel Blob · Vitest · Vercel",
         "imageAlt": "Página de inicio del sitio del Cuarteto Fratres: titular sobre fondo oscuro, retrato del cuarteto y próximas fechas de concierto",
         "extraTabs": []
       },

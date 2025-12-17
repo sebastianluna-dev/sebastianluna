@@ -71,9 +71,12 @@
         "kicker": "String quartet website",
         "title": "cuarteto fratres",
         "description": [
-          "Website of a string quartet and its booking material: upcoming dates, member profiles, repertoire with a player and a contact form. The group edits all the content from a CMS."
+          "I designed and built Cuarteto Fratres’ website to showcase their music and support bookings for concerts, weddings, and private events.",
+          "Built with Next.js, React, TypeScript, and Payload CMS on PostgreSQL, it brings together upcoming performances, musician profiles, repertoire, and contact. The group manages content and booking inquiries independently.",
+          "I chose a single-page layout to make it easy to discover the quartet and get in touch, with a visual identity built around black-and-white photography and lime accents.",
+          "I handled the project end to end, from product planning and design to development, CMS modeling, and deployment."
         ],
-        "stack": "Next.js · TypeScript · Payload CMS · PostgreSQL · Vitest · Vercel",
+        "stack": "Next.js · React · TypeScript · Payload CMS · PostgreSQL · Vercel Blob · Vitest · Vercel",
         "imageAlt": "Home page of the Cuarteto Fratres site: headline on a dark background, portrait of the quartet and upcoming concert dates",
         "extraTabs": []
       },

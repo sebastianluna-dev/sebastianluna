@@ -48,9 +48,12 @@
         "kicker": "Red de sitios médicos",
         "title": "reto md",
         "description": [
-          "Frontend de los productos de Reto MD, la app con la que estudiantes de medicina preparan el ENARM. Sitio corporativo en Next.js y unificación de todas las especialidades en una arquitectura multi-tenant: un repositorio, seis despliegues."
+          "Desarrollé la presencia web de Reto MD, una app móvil que prepara a médicos mexicanos para el ENARM. Sus sitios presentan el producto, comercializan membresías y captan usuarios.",
+          "El corporativo reúne productos, cursos, eventos, podcasts, vacantes y blog. Lo construí con Next.js, React, TypeScript y Tailwind CSS, integrando TanStack Query para datos y NextAuth con Firebase para cuentas.",
+          "Unifiqué la red de sitios por especialidad en una aplicación multi-tenant con App Router y next-intl. Cada especialidad define su identidad, contenido y funciones mediante configuración, sin necesidad de duplicar proyectos.",
+          "Escribí todo el código de la presencia web: implementación frontend, integración de servicios y una arquitectura compartida que simplifica el mantenimiento y los nuevos lanzamientos."
         ],
-        "stack": "Next.js · TypeScript · Tailwind · next-intl · Firebase · TanStack Query · Vercel · SEO",
+        "stack": "Next.js · React · TypeScript · Tailwind CSS · TanStack Query · NextAuth · Firebase · next-intl · PostHog · Vercel",
         "imageAlt": "Página de inicio de Reto MD",
         "extraTabs": ["+ 7 sitios de la red"]
       },

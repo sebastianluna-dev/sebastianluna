@@ -63,7 +63,7 @@
           "Having student information in one place helps me spot individual learning needs and common challenges, tailor my coaching, and improve the program and learning materials.",
           "I own the full product lifecycle, from defining requirements and designing the experience to building a platform around the way my academy works."
         ],
-        "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
+        "stack": "Figma · Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
         "imageAlt": "Home page of 365 Días de Ajedrez",
         "extraTabs": []
       },
@@ -76,7 +76,7 @@
           "I chose a single-page layout to make it easy to discover the quartet and get in touch, with a visual identity built around black-and-white photography and lime accents.",
           "I handled the project end to end, from product planning and design to development, CMS modeling, and deployment."
         ],
-        "stack": "Next.js · React · TypeScript · Payload CMS · PostgreSQL · Vercel Blob · Vitest · Vercel",
+        "stack": "Figma · Next.js · React · TypeScript · Payload CMS · PostgreSQL · Vercel Blob · Vitest · Vercel",
         "imageAlt": "Home page of the Cuarteto Fratres site: headline on a dark background, portrait of the quartet and upcoming concert dates",
         "extraTabs": []
       },

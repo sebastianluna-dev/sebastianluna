@@ -63,7 +63,7 @@
           "La información centralizada me permite identificar las necesidades de cada alumno y detectar dificultades recurrentes para personalizar la enseñanza y mejorar el programa y sus contenidos.",
           "Lidero el proyecto desde la definición del producto y el diseño hasta su implementación, convirtiendo las necesidades de mi academia en una experiencia digital a la medida."
         ],
-        "stack": "Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
+        "stack": "Figma · Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
         "imageAlt": "Página de inicio de 365 Días de Ajedrez",
         "extraTabs": []
       },
@@ -76,7 +76,7 @@
           "Organicé la experiencia en una sola página para facilitar el recorrido desde conocer al cuarteto hasta contactarlo, con una identidad visual basada en fotografía en blanco y negro y acentos lima.",
           "Me encargué de todo el proyecto: producto, diseño, desarrollo, modelado del CMS y despliegue."
         ],
-        "stack": "Next.js · React · TypeScript · Payload CMS · PostgreSQL · Vercel Blob · Vitest · Vercel",
+        "stack": "Figma · Next.js · React · TypeScript · Payload CMS · PostgreSQL · Vercel Blob · Vitest · Vercel",
         "imageAlt": "Página de inicio del sitio del Cuarteto Fratres: titular sobre fondo oscuro, retrato del cuarteto y próximas fechas de concierto",
         "extraTabs": []
       },

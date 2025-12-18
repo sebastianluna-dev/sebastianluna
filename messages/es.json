@@ -83,17 +83,17 @@
         "imageAlt": "Página de inicio del sitio del Cuarteto Fratres: titular sobre fondo oscuro, retrato del cuarteto y próximas fechas de concierto",
         "extraTabs": []
       },
-      "vallarta-wknd": {
+      "vallarta-tours": {
         "kicker": "Turismo · tours en barco",
-        "title": "vallarta wknd",
+        "title": "vallarta tours",
         "description": [
-          "Vallarta WKND es la marca ficticia con la que presento un sitio que desarrollé para una operadora de tours en barco en Puerto Vallarta. El sitio original estuvo en funcionamiento; tras su baja, adapté la marca y algunos contenidos para mostrar mi trabajo en el portafolio.",
+          "Vallarta TOURS es la marca ficticia con la que presento un sitio que desarrollé para una operadora de tours en barco en Puerto Vallarta. El sitio original estuvo en funcionamiento; tras su baja, adapté la marca y algunos contenidos para mostrar mi trabajo en el portafolio.",
           "Construido con Next.js, React, TypeScript y next-intl, reúne cinco rutas, detalles de las experiencias, un recorrido de reserva y contacto en español e inglés. La versión de muestra utiliza contenido estático.",
           "Traduje también las direcciones de las páginas para mantener una navegación coherente en ambos idiomas. Al cambiar de idioma, el visitante permanece en la página equivalente sin perder el contexto.",
           "Me encargué del producto, el diseño en Figma, el desarrollo, las pruebas con Vitest y el despliegue en Vercel."
         ],
         "stack": "Figma · Next.js · React · TypeScript · next-intl · Vitest · Vercel",
-        "imageAlt": "Captura del sitio de Vallarta WKND",
+        "imageAlt": "Captura del sitio de Vallarta TOURS",
         "extraTabs": ["Reservas"]
       }
     }

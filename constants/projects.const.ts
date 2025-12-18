@@ -12,7 +12,7 @@ export interface ProjectImage {
 }
 
 /** Keys of `projects.items` in the messages. */
-export type ProjectSlug = "reto-md" | "365-dias-de-ajedrez" | "cuarteto-fratres" | "vallarta-wknd";
+export type ProjectSlug = "reto-md" | "365-dias-de-ajedrez" | "cuarteto-fratres" | "vallarta-tours";
 
 export interface Project {
   slug: ProjectSlug;
@@ -44,9 +44,9 @@ export const PROJECTS: readonly Project[] = [
     image: { src: "/images/reto-md.jpg", width: 1600, height: 900 },
   },
   {
-    slug: "vallarta-wknd",
-    tabs: ["Vallarta WKND"],
-    url: "https://vallartawknd.vercel.app",
-    image: { src: "/images/vallarta-wknd.jpg", width: 1600, height: 900 },
+    slug: "vallarta-tours",
+    tabs: ["Vallarta TOURS"],
+    url: "https://vallartatours.vercel.app",
+    image: { src: "/images/vallarta-tours.jpg", width: 1600, height: 900 },
   },
 ];

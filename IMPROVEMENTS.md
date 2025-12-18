@@ -28,13 +28,13 @@ across a reload — and document here if it behaves differently.
 ### The domains and the screenshots — [Content] · resolved 2025-12-10
 
 Three of the four cards printed «Dominio por confirmar» and showed no «Visitar el sitio» button.
-Reto MD, Cuarteto Fratres and Vallarta WKND now carry their public URL, and the first two also
+Reto MD, Cuarteto Fratres and Vallarta TOURS now carry their public URL, and the first two also
 got a fresh capture of the live home page, at the same 1600 px cut as the rest.
 
-### The Vallarta WKND screenshot — [Content] · resolved 2025-12-09
+### The Vallarta TOURS screenshot — [Content] · resolved 2025-12-09
 
 Its card showed the amber placeholder and, with no browser window, its tabs never rendered.
-`public/images/vallarta-wknd.jpg` is the home at 1600 px, the same cut as the other three.
+`public/images/vallarta-tours.jpg` is the home at 1600 px, the same cut as the other three.
 
 ### The CV files — [Content] · resolved 2025-12-08
 

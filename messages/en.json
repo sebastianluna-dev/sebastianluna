@@ -84,12 +84,15 @@
         "extraTabs": []
       },
       "vallarta-wknd": {
-        "kicker": "Tourism · bookings and payments",
+        "kicker": "Tourism · boat tours",
         "title": "vallarta wknd",
         "description": [
-          "A tourism site from start to finish: research, wireframes, design and frontend, with bookings, payments and availability on Shopify."
+          "Vallarta WKND is the fictional brand I use to showcase a website I originally built for a boat tour operator in Puerto Vallarta. The original site was live; after it was taken offline, I adapted the branding and selected content to preserve the work as a portfolio piece.",
+          "Built with Next.js, React, TypeScript, and next-intl, it presents five tours, experience details, a booking flow, and contact information in Spanish and English. The showcase version serves static content.",
+          "I localized page URLs alongside the content to keep navigation consistent in both languages. Switching languages takes visitors to the equivalent page, so they can continue browsing without losing their place.",
+          "I handled product planning, design in Figma, development, testing with Vitest, and deployment on Vercel."
         ],
-        "stack": "Shopify · Liquid · JavaScript · Bookings · Payments · Availability",
+        "stack": "Figma · Next.js · React · TypeScript · next-intl · Vitest · Vercel",
         "imageAlt": "Screenshot of the Vallarta WKND site",
         "extraTabs": ["Bookings"]
       }

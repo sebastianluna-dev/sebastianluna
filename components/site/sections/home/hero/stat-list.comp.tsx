@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { STATS } from "@/constants/profile.const";
 import "./stat-list.comp.css";
 
-// The four figures under the lead: "+6 años de desarrollo frontend…".
+// The three figures under the lead: "+30 clientes satisfechos…".
 export function StatList() {
   const t = useTranslations("hero.stats");
 

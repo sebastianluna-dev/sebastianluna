@@ -31,10 +31,9 @@
     "lead": "Transformo las necesidades del negocio en experiencias web intuitivas, adaptables y confiables. Desde el diseño hasta la puesta en producción, desarrollo con React, Next.js y TypeScript, cuidando cada detalle.",
     "portraitAlt": "Retrato de Sebastian Luna",
     "stats": {
-      "years": "Años de desarrollo frontend",
-      "projects": "Proyectos en los que he participado",
-      "products": "Productos construidos de principio a fin",
-      "industries": "Industrias para las que he trabajado"
+      "clients": "Clientes satisfechos",
+      "projects": "Proyectos entregados",
+      "years": "Años de experiencia en frontend"
     }
   },
   "projects": {

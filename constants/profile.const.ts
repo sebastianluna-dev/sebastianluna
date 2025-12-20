@@ -25,12 +25,14 @@ export const CV_FILES: Record<Locale, string> = {
   en: "/cv/en/cv-sebastian-luna-senior-frontend-developer.pdf",
 };
 
-/** The figures of the hero; their labels are `hero.stats.<key>` in messages. */
+/**
+ * The three figures of the hero; their labels are `hero.stats.<key>` in
+ * messages.
+ */
 export const STATS = [
-  { key: "years", value: 6, approximate: true },
+  { key: "clients", value: 30, approximate: true },
   { key: "projects", value: 50, approximate: true },
-  { key: "products", value: 15, approximate: false },
-  { key: "industries", value: 5, approximate: true },
+  { key: "years", value: 6, approximate: true },
 ] as const;
 
 export const PORTFOLIO_YEAR = 2026;

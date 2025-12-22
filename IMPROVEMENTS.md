@@ -51,11 +51,12 @@ family, used by nothing else and never shipped to the browser.
 
 ### Reveal on scroll — [UX] · resolved 2025-12-08
 
-`hooks/use-reveal.hook.ts` and `components/site/shared/reveal.comp.tsx`: the blocks of «Sobre mí»,
-«Proyectos» and «Contacto» fade in the first time they enter the viewport, and the project cards
-come in one by one through a per-card delay. The hidden state lives under
-`@media (scripting: enabled)`, so with JavaScript off nothing is ever invisible; whoever asks for
-reduced motion gets everything at once.
+`hooks/use-reveal.hook.ts` and `components/site/shared/reveal.comp.tsx`: the blocks of «Inicio»,
+«Sobre mí», «Proyectos» and «Contacto» fade in the first time they enter the viewport, and the
+project cards come in one by one through a per-card delay. In the hero, already on screen when
+the page loads, the copy and the amber card come in on load, the card a tenth of a second later.
+The hidden state lives under `@media (scripting: enabled)`, so with JavaScript off nothing is
+ever invisible; whoever asks for reduced motion gets everything at once.
 
 ### Browser frame tab titles were copy — [i18n] · resolved 2025-12-08
 

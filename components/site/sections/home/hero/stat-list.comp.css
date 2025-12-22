@@ -38,22 +38,26 @@
     color: var(--color-muted);
   }
 
+  /* The phone keeps the three figures on one row: narrower columns, so both
+     the figure and its label shrink to fit. There the rule above them goes:
+     the 16px that separate every block of the hero are separation enough. */
   @media (max-width: 767px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 18px 16px;
+    gap: 12px;
     margin-top: 0;
-    padding-top: 18px;
+    padding-top: 0;
+    border-top: none;
 
     & .stat-list__item {
-      row-gap: 5px;
+      row-gap: 4px;
     }
 
     & .stat-list__value {
-      font-size: 34px;
+      font-size: 32px;
     }
 
     & .stat-list__label {
-      line-height: 1.4;
+      font-size: 14px;
+      line-height: 1.35;
     }
   }
 }

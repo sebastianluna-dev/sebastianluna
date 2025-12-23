@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useRef } from "react";
 import { PillLink } from "@/components/site/shared/pill-link.comp";
 import { NAV_ITEMS } from "@/constants/navigation.const";
-import { CONTACT_EMAILS, CV_FILES, PROFILE } from "@/constants/profile.const";
+import { CONTACT_EMAILS, CV_FILES, PORTFOLIO_YEAR, PROFILE } from "@/constants/profile.const";
 import { formatIndex } from "@/lib/format-index";
 import "./mobile-menu.comp.css";
 
@@ -29,7 +29,11 @@ export function MobileMenu() {
 
       <dialog ref={dialogRef} className="mobile-menu__panel" aria-label={t("menu")}>
         <div className="mobile-menu__bar">
-          <span className="eyebrow mobile-menu__title">{t("menu")}</span>
+          {/* The bar of the panel keeps the label of the header, «Portafolio 2026»;
+              «Menú» is left to the accessible name of the dialog. */}
+          <span className="eyebrow mobile-menu__title">
+            {tCommon("portfolioLabel", { year: PORTFOLIO_YEAR })}
+          </span>
           <button type="button" className="mobile-menu__close" aria-label={t("closeMenu")} onClick={close}>
             <span aria-hidden="true">✕</span>
           </button>

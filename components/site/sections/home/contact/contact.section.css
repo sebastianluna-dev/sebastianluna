@@ -66,12 +66,12 @@
     gap: 12px;
   }
 
-  & .contact__cv-plain {
+  & .contact__cv_tone_ink {
     display: none;
   }
 
   /* Phone: no card. A rule over the title, the email as an amber block, the
-     two pills side by side and the CV as a plain text link. */
+     two pills side by side and the CV as the ink pill of the hero. */
   @media (max-width: 767px) {
     padding: 44px 0 36px;
 
@@ -157,24 +157,13 @@
       border-color: var(--color-line-strong);
     }
 
-    & .contact__cv {
+    & .contact__cv_tone_paper {
       display: none;
     }
 
-    & .contact__cv-plain {
-      display: flex;
+    & .contact__cv_tone_ink {
+      display: inline-flex;
       grid-column: 1 / -1;
-      align-items: center;
-      gap: 10px;
-      padding: 0 0 12px;
-      border-bottom: 1px solid var(--color-line);
-      font-size: 15px;
-      color: var(--color-text-soft);
-
-      &:hover,
-      &:focus-visible {
-        color: var(--color-rust);
-      }
     }
 
     & .contact__location {

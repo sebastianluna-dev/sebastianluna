@@ -40,12 +40,21 @@ export function ContactSection() {
             >
               {tCommon("github")} ↗
             </a>
-            <PillLink className="contact__cv" href={CV_FILES[locale]} icon="download" variant="paper" download>
+            {/* Two pills, one shown at a time: the light one belongs to the
+                amber card, the ink one to the phone, where there is no card
+                and it repeats the pill of the hero. */}
+            <PillLink
+              className="contact__cv contact__cv_tone_paper"
+              href={CV_FILES[locale]}
+              icon="download"
+              variant="paper"
+              download
+            >
               {tCommon("downloadCv")}
             </PillLink>
-            <a className="contact__cv-plain" href={CV_FILES[locale]} download>
-              {tCommon("downloadCv")} <span aria-hidden="true">↓</span>
-            </a>
+            <PillLink className="contact__cv contact__cv_tone_ink" href={CV_FILES[locale]} icon="download" download>
+              {tCommon("downloadCv")}
+            </PillLink>
           </div>
         </Reveal>
       </div>

@@ -20,6 +20,12 @@
       padding-bottom: 14px;
     }
 
+    /* The phrase beside the title does not fit next to it on the phone, and
+       under it only repeats what the cards already say: it goes. */
+    & .projects__subtitle {
+      display: none;
+    }
+
     & .projects__list {
       display: flex;
       flex-direction: column;

@@ -12,7 +12,7 @@ export function ProjectsSection() {
       <div className="section__inner">
         <Reveal className="projects__head">
           <h2 className="section-title">{t("title")}</h2>
-          <p className="eyebrow">{t("subtitle")}</p>
+          <p className="eyebrow projects__subtitle">{t("subtitle")}</p>
         </Reveal>
         <ol className="projects__list">
           {PROJECTS.map((project, index) => (

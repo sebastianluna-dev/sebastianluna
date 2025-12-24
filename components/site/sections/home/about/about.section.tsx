@@ -4,11 +4,10 @@ import { messageList } from "@/lib/message-list";
 import "./about.section.css";
 
 // Title and discipline on the left; the italic statement and three
-// paragraphs on the right. The phone drops the statement and shows the
-// disciplines as chips instead.
+// paragraphs on the right. The phone keeps the title alone and shows the
+// disciplines as chips instead of the statement.
 export function AboutSection() {
   const t = useTranslations("about");
-  const tHero = useTranslations("hero");
   const tags = messageList(t.raw("tags"));
   const paragraphs = messageList(t.raw("paragraphs"));
 
@@ -18,7 +17,6 @@ export function AboutSection() {
         <Reveal className="about__head">
           <h2 className="section-title">{t("title")}</h2>
           <p className="eyebrow about__subtitle">{t("subtitle")}</p>
-          <p className="eyebrow about__subtitle about__subtitle_short">{tHero("role")}</p>
         </Reveal>
         <Reveal className="about__body" delay={0.08}>
           <ul className="about__tags" aria-label={t("subtitle")}>

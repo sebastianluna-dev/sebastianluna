@@ -1,12 +1,27 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { BrowserFrame } from "@/components/site/shared/browser-frame.comp";
+import { BrowserFrame, type BrowserView } from "@/components/site/shared/browser-frame.comp";
 import { PillLink } from "@/components/site/shared/pill-link.comp";
-import type { Project } from "@/constants/projects.const";
+import type { Project, ProjectImage } from "@/constants/projects.const";
 import { displayUrl } from "@/lib/display-url";
 import { formatIndex } from "@/lib/format-index";
 import { messageList } from "@/lib/message-list";
 import "./project-card.comp.css";
+
+// The capture inside the window; every tab draws one the same way.
+function ProjectShot({ image, alt }: { image: ProjectImage; alt: string }) {
+  return (
+    <Image
+      className="project-card__shot"
+      src={image.src}
+      alt={alt}
+      width={image.width}
+      height={image.height}
+      sizes="(max-width: 767px) 100vw, (max-width: 1280px) 55vw, 720px"
+      quality={100}
+    />
+  );
+}
 
 interface ProjectCardProps {
   project: Project;
@@ -18,10 +33,23 @@ interface ProjectCardProps {
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const t = useTranslations("projects");
   const tItem = useTranslations(`projects.items.${project.slug}`);
-  // The product's own names first, then the tabs that are copy.
-  const tabs = [...project.tabs, ...messageList(tItem.raw("extraTabs"))];
   const paragraphs = messageList(tItem.raw("description"));
   const domain = project.url ? displayUrl(project.url) : null;
+  // The product's own site opens first; its other sites follow in their tabs.
+  const views: BrowserView[] = project.image
+    ? [
+        {
+          tab: project.tab,
+          url: domain ?? t("domainPending"),
+          content: <ProjectShot image={project.image} alt={tItem("imageAlt")} />,
+        },
+        ...(project.extraViews ?? []).map((view) => ({
+          tab: view.tab,
+          url: displayUrl(view.url),
+          content: <ProjectShot image={view.image} alt={t("viewImageAlt", { site: view.tab })} />,
+        })),
+      ]
+    : [];
 
   return (
     <article className="project-card">
@@ -54,18 +82,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       </div>
 
       <div className="project-card__media">
-        {project.image ? (
-          <BrowserFrame tabs={tabs} url={domain ?? t("domainPending")}>
-            <Image
-              className="project-card__shot"
-              src={project.image.src}
-              alt={tItem("imageAlt")}
-              width={project.image.width}
-              height={project.image.height}
-              sizes="(max-width: 767px) 100vw, (max-width: 1280px) 55vw, 720px"
-              quality={100}
-            />
-          </BrowserFrame>
+        {views.length > 0 ? (
+          <BrowserFrame views={views} label={t("tabsLabel", { project: tItem("title") })} />
         ) : (
           <div className="project-card__placeholder" role="img" aria-label={tItem("imageAlt")}>
             <span className="eyebrow eyebrow_tone_cocoa">{t("screenshotPending")}</span>

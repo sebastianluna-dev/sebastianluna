@@ -43,6 +43,12 @@
     }
   }
 
+  & .browser-frame__strip {
+    display: flex;
+    align-items: flex-end;
+    align-self: stretch;
+  }
+
   & .browser-frame__tab {
     display: flex;
     align-items: center;
@@ -51,13 +57,32 @@
     max-width: 220px;
     height: 34px;
     padding: 0 12px;
+    border: 0;
     border-radius: 8px 8px 0 0;
+    background: none;
     color: var(--browser-frame-dim);
+    font-family: inherit;
     font-size: 12px;
 
     &.browser-frame__tab_active {
       background: var(--browser-frame-mid);
       color: var(--browser-frame-text);
+    }
+
+    /* Tabs that swap the capture behave like the real thing. */
+    &.browser-frame__tab_switchable {
+      align-self: flex-end;
+      cursor: pointer;
+
+      &:hover:not(.browser-frame__tab_active) {
+        background: var(--browser-frame-field);
+        color: var(--browser-frame-text);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--browser-frame-text);
+        outline-offset: -3px;
+      }
     }
   }
 

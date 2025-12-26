@@ -42,6 +42,8 @@
     "visit": "Visit the site",
     "domainPending": "Domain to be confirmed",
     "screenshotPending": "Screenshot pending",
+    "tabsLabel": "{project} sites",
+    "viewImageAlt": "{site} home page",
     "items": {
       "reto-md": {
         "kicker": "Network of medical sites",
@@ -53,8 +55,7 @@
           "I wrote the entire web codebase, owning frontend implementation, service integrations, and a shared architecture that simplifies maintenance and future launches."
         ],
         "stack": "Next.js · React · TypeScript · Tailwind CSS · TanStack Query · NextAuth · Firebase · next-intl · PostHog · Vercel",
-        "imageAlt": "Home page of Reto MD",
-        "extraTabs": []
+        "imageAlt": "Home page of Reto MD"
       },
       "365-dias-de-ajedrez": {
         "kicker": "Online academy · own project",
@@ -66,8 +67,7 @@
           "I own the full product lifecycle, from defining requirements and designing the experience to building a platform around the way my academy works."
         ],
         "stack": "Figma · Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
-        "imageAlt": "Home page of 365 Días de Ajedrez",
-        "extraTabs": []
+        "imageAlt": "Home page of 365 Días de Ajedrez"
       },
       "cuarteto-fratres": {
         "kicker": "String quartet website",
@@ -79,8 +79,7 @@
           "I handled the project end to end, from product planning and design to development, CMS modeling, and deployment."
         ],
         "stack": "Figma · Next.js · React · TypeScript · Payload CMS · PostgreSQL · Vercel Blob · Vitest · Vercel",
-        "imageAlt": "Home page of the Cuarteto Fratres site: headline on a dark background, portrait of the quartet and upcoming concert dates",
-        "extraTabs": []
+        "imageAlt": "Home page of the Cuarteto Fratres site: headline on a dark background, portrait of the quartet and upcoming concert dates"
       },
       "vallarta-tours": {
         "kicker": "Tourism · boat tours",
@@ -92,8 +91,7 @@
           "I handled product planning, design in Figma, development, testing with Vitest, and deployment on Vercel."
         ],
         "stack": "Figma · Next.js · React · TypeScript · next-intl · Vitest · Vercel",
-        "imageAlt": "Screenshot of the Vallarta TOURS site",
-        "extraTabs": []
+        "imageAlt": "Screenshot of the Vallarta TOURS site"
       }
     }
   },

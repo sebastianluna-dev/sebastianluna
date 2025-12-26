@@ -42,6 +42,8 @@
     "visit": "Visitar el sitio",
     "domainPending": "Dominio por confirmar",
     "screenshotPending": "Captura pendiente",
+    "tabsLabel": "Sitios de {project}",
+    "viewImageAlt": "Página de inicio de {site}",
     "items": {
       "reto-md": {
         "kicker": "Red de sitios médicos",
@@ -53,8 +55,7 @@
           "Escribí todo el código de la presencia web: implementación frontend, integración de servicios y una arquitectura compartida que simplifica el mantenimiento y los nuevos lanzamientos."
         ],
         "stack": "Next.js · React · TypeScript · Tailwind CSS · TanStack Query · NextAuth · Firebase · next-intl · PostHog · Vercel",
-        "imageAlt": "Página de inicio de Reto MD",
-        "extraTabs": []
+        "imageAlt": "Página de inicio de Reto MD"
       },
       "365-dias-de-ajedrez": {
         "kicker": "Academia online · proyecto propio",
@@ -66,8 +67,7 @@
           "Lidero el proyecto desde la definición del producto y el diseño hasta su implementación, convirtiendo las necesidades de mi academia en una experiencia digital a la medida."
         ],
         "stack": "Figma · Next.js · React · TypeScript · Payload CMS · Prisma · PostgreSQL · Chessground · chessops · Cloudinary · Vitest · Storybook · Vercel",
-        "imageAlt": "Página de inicio de 365 Días de Ajedrez",
-        "extraTabs": []
+        "imageAlt": "Página de inicio de 365 Días de Ajedrez"
       },
       "cuarteto-fratres": {
         "kicker": "Sitio del cuarteto",
@@ -79,8 +79,7 @@
           "Me encargué de todo el proyecto: producto, diseño, desarrollo, modelado del CMS y despliegue."
         ],
         "stack": "Figma · Next.js · React · TypeScript · Payload CMS · PostgreSQL · Vercel Blob · Vitest · Vercel",
-        "imageAlt": "Página de inicio del sitio del Cuarteto Fratres: titular sobre fondo oscuro, retrato del cuarteto y próximas fechas de concierto",
-        "extraTabs": []
+        "imageAlt": "Página de inicio del sitio del Cuarteto Fratres: titular sobre fondo oscuro, retrato del cuarteto y próximas fechas de concierto"
       },
       "vallarta-tours": {
         "kicker": "Turismo · tours en barco",
@@ -92,8 +91,7 @@
           "Me encargué del producto, el diseño en Figma, el desarrollo, las pruebas con Vitest y el despliegue en Vercel."
         ],
         "stack": "Figma · Next.js · React · TypeScript · next-intl · Vitest · Vercel",
-        "imageAlt": "Captura del sitio de Vallarta TOURS",
-        "extraTabs": []
+        "imageAlt": "Captura del sitio de Vallarta TOURS"
       }
     }
   },

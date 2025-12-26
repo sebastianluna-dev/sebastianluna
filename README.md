@@ -43,15 +43,15 @@ Además Next genera `/robots.txt`, `/sitemap.xml` (las dos URLs con sus alternat
 
 ## Contenido e idiomas
 
-Todo lo que lee el visitante está en `messages/es.json` y `messages/en.json`, con las mismas claves (el español es el catálogo de referencia y da el tipo de `t()`; ver `types/next-intl.d.ts`). Cada sección lee su espacio de nombres (`hero`, `projects`, `about`, `contact`…) con `useTranslations` o `getTranslations`. Las listas (etiquetas, párrafos, pestañas del navegador dibujado) son arrays JSON y se leen con `t.raw` a través de `lib/message-list.ts`, que comprueba que sean listas de textos.
+Todo lo que lee el visitante está en `messages/es.json` y `messages/en.json`, con las mismas claves (el español es el catálogo de referencia y da el tipo de `t()`; ver `types/next-intl.d.ts`). Cada sección lee su espacio de nombres (`hero`, `projects`, `about`, `contact`…) con `useTranslations` o `getTranslations`. Las listas (etiquetas, párrafos) son arrays JSON y se leen con `t.raw` a través de `lib/message-list.ts`, que comprueba que sean listas de textos.
 
 Lo que no cambia con el idioma está en `constants/`:
 
 - `profile.const.ts`: nombre, LinkedIn, GitHub, retrato, el correo y las rutas del CV por idioma (`CONTACT_EMAILS` y `CV_FILES`), las cifras del inicio (`STATS`) y el año del portafolio.
-- `projects.const.ts`: los cuatro productos en orden, con su URL pública (si la hay) y su captura. Los textos de cada uno están en `projects.items.<slug>` de los mensajes; un proyecto sin URL muestra «Dominio por confirmar» y sin botón; uno sin captura muestra una tarjeta ámbar de «Captura pendiente».
+- `projects.const.ts`: los cuatro productos en orden, con su URL pública (si la hay), su captura y el rótulo de su pestaña en el navegador dibujado. Los textos de cada uno están en `projects.items.<slug>` de los mensajes; un proyecto sin URL muestra «Dominio por confirmar» y sin botón; uno sin captura muestra una tarjeta ámbar de «Captura pendiente». Un producto con más de un sitio los lista en `extraViews`: cada uno añade una pestaña que, al pulsarla, cambia la captura y la dirección (hoy sólo Reto MD, con Reto Pediatría). Las pestañas sólo existen en escritorio: el teléfono no dibuja el navegador y se queda con la primera.
 - `navigation.const.ts`: las anclas.
 
-Las imágenes están en `public/images` (JPEG de las capturas a 1600 px; el retrato es PNG con transparencia, recortado sobre la tarjeta ámbar) y las fuentes en `public/fonts` (Archivo variable, IBM Plex Mono e Instrument Serif itálica, subconjuntos latinos de Google Fonts servidos en local desde `app/[locale]/fonts.ts`). En esa misma carpeta están `archivo-400.ttf` y `archivo-600.ttf`, que no sirve el navegador: los lee la imagen Open Graph, porque Satori no admite woff2.
+Las imágenes están en `public/images` (JPEG de las capturas a 1600 × 900; el retrato es PNG con transparencia, recortado sobre la tarjeta ámbar) y las fuentes en `public/fonts` (Archivo variable, IBM Plex Mono e Instrument Serif itálica, subconjuntos latinos de Google Fonts servidos en local desde `app/[locale]/fonts.ts`). En esa misma carpeta están `archivo-400.ttf` y `archivo-600.ttf`, que no sirve el navegador: los lee la imagen Open Graph, porque Satori no admite woff2.
 
 Los archivos del CV están en `public/cv/<idioma>/cv-sebastian-luna-senior-frontend-developer.pdf`, uno por idioma (`CV_FILES` en `constants/profile.const.ts`). Una carpeta por idioma en vez de un sufijo, para que las dos descargas lleguen al disco con el mismo nombre.
 
@@ -65,7 +65,7 @@ Los archivos del CV están en `public/cv/<idioma>/cv-sebastian-luna-senior-front
 - **`lib/`**: funciones puras con test al lado (`*.test.ts`).
 - **`constants/`** y **`messages/`**: el contenido (ver arriba).
 
-El único componente de cliente es el menú del teléfono (`mobile-menu.comp.tsx`), un `<dialog>` modal nativo: el navegador se encarga del foco y de la tecla Escape, y `globals.css` bloquea el scroll de la página mientras está abierto.
+Hay dos componentes de cliente. El menú del teléfono (`mobile-menu.comp.tsx`), un `<dialog>` modal nativo: el navegador se encarga del foco y de la tecla Escape, y `globals.css` bloquea el scroll de la página mientras está abierto. Y el navegador dibujado (`browser-frame.comp.tsx`), que guarda qué pestaña está abierta; con una sola vista su cromo sigue siendo decorativo (`aria-hidden`), y con varias las pestañas son botones (`tablist`/`tab`, flechas izquierda y derecha) que cambian la captura. Las capturas llegan como props desde la tarjeta, así que `next/image` se sigue resolviendo en el servidor.
 
 ## Despliegue en Vercel
 

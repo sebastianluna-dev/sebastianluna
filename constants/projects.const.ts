@@ -59,6 +59,11 @@ export const PROJECTS: readonly Project[] = [
         url: "https://retopediatria.com",
         image: { src: "/images/reto-pediatria.jpg", width: 1600, height: 900 },
       },
+      {
+        tab: "Reto Dermatología",
+        url: "https://retodermatologia.com",
+        image: { src: "/images/reto-dermatologia.jpg", width: 1600, height: 900 },
+      },
     ],
   },
   {

@@ -47,6 +47,7 @@
     display: flex;
     align-items: flex-end;
     align-self: stretch;
+    min-width: 0;
   }
 
   & .browser-frame__tab {
@@ -69,9 +70,12 @@
       color: var(--browser-frame-text);
     }
 
-    /* Tabs that swap the capture behave like the real thing. */
+    /* Tabs that swap the capture behave like the real thing: they narrow as
+       the row fills up, instead of spilling out of the window. The floor
+       leaves room for the shortest name, so only the long ones ever clip. */
     &.browser-frame__tab_switchable {
       align-self: flex-end;
+      min-width: 100px;
       cursor: pointer;
 
       &:hover:not(.browser-frame__tab_active) {

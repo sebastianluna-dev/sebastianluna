@@ -54,7 +54,7 @@
         ],
         "stack": "Next.js · React · TypeScript · Tailwind CSS · TanStack Query · NextAuth · Firebase · next-intl · PostHog · Vercel",
         "imageAlt": "Home page of Reto MD",
-        "extraTabs": ["+ 7 sites in the network"]
+        "extraTabs": []
       },
       "365-dias-de-ajedrez": {
         "kicker": "Online academy · own project",
@@ -93,7 +93,7 @@
         ],
         "stack": "Figma · Next.js · React · TypeScript · next-intl · Vitest · Vercel",
         "imageAlt": "Screenshot of the Vallarta TOURS site",
-        "extraTabs": ["Bookings"]
+        "extraTabs": []
       }
     }
   },

@@ -27,7 +27,7 @@ export interface Project {
 export const PROJECTS: readonly Project[] = [
   {
     slug: "365-dias-de-ajedrez",
-    tabs: ["365 Días de Ajedrez", "Método 365"],
+    tabs: ["365 Días de Ajedrez"],
     url: "https://365diasdeajedrez.com",
     image: { src: "/images/365-dias-de-ajedrez.jpg", width: 1600, height: 900 },
   },

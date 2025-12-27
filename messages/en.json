@@ -54,7 +54,7 @@
           "I consolidated the specialty websites into one multi-tenant application with App Router and next-intl. Each specialty’s branding, content, and features are configuration-driven, removing the need to duplicate projects.",
           "I wrote the entire web codebase, owning frontend implementation, service integrations, and a shared architecture that simplifies maintenance and future launches."
         ],
-        "stack": "Next.js · React · TypeScript · Tailwind CSS · TanStack Query · NextAuth · Firebase · next-intl · PostHog · Vercel",
+        "stack": "Next.js · React · TypeScript · Tailwind CSS · TanStack Query · NextAuth · Firebase · next-intl · Vercel",
         "imageAlt": "Home page of Reto MD"
       },
       "365-dias-de-ajedrez": {

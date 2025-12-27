@@ -54,7 +54,7 @@
           "Unifiqué la red de sitios por especialidad en una aplicación multi-tenant con App Router y next-intl. Cada especialidad define su identidad, contenido y funciones mediante configuración, sin necesidad de duplicar proyectos.",
           "Escribí todo el código de la presencia web: implementación frontend, integración de servicios y una arquitectura compartida que simplifica el mantenimiento y los nuevos lanzamientos."
         ],
-        "stack": "Next.js · React · TypeScript · Tailwind CSS · TanStack Query · NextAuth · Firebase · next-intl · PostHog · Vercel",
+        "stack": "Next.js · React · TypeScript · Tailwind CSS · TanStack Query · NextAuth · Firebase · next-intl · Vercel",
         "imageAlt": "Página de inicio de Reto MD"
       },
       "365-dias-de-ajedrez": {

@@ -89,19 +89,34 @@
       display: contents;
     }
 
+    /* The phone turns the hierarchy around: the name of the section reads as
+       the title, with the same rule under it as «sobre mí» and «proyectos»
+       and in lowercase, as those are written in the messages. */
     & .contact__eyebrow {
       order: 1;
       margin-bottom: 0;
-      padding-top: 14px;
-      border-top: 2px solid var(--color-ink);
-      color: var(--color-rust);
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--color-line);
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      text-transform: lowercase;
+      color: var(--color-ink);
     }
 
+    /* «contacto» is the title here, so the sentence is not drawn; the heading
+       itself stays in the page, out of sight, so the section is not left
+       without one for whoever reads it with a screen reader. */
     & .contact__title {
-      order: 2;
-      margin: -4px 0 0;
-      font-size: 30px;
-      line-height: 1;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      clip-path: inset(50%);
     }
 
     & .contact__email {

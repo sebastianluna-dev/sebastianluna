@@ -1,11 +1,12 @@
 .header {
   padding-top: clamp(20px, 2.6vw, 36px);
 
+  /* Label, links and language switch: the middle column holds the links in
+     the centre of the page, whatever the other two measure. */
   & .header__inner {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
     gap: 16px 24px;
   }
 
@@ -39,13 +40,14 @@
   /* Bigger than the shared `eyebrow` it rides on, which the sections still
      use at its own size. */
   & .header__label {
-    margin-left: auto;
+    justify-self: start;
     font-size: 14px;
     letter-spacing: 0.14em;
   }
 
   & .header__tools {
     display: flex;
+    justify-self: end;
     align-items: center;
     gap: 18px;
   }
@@ -56,16 +58,13 @@
     padding-top: 22px;
 
     & .header__inner {
-      flex-wrap: nowrap;
+      display: flex;
+      justify-content: space-between;
       min-height: 44px;
     }
 
     & .header__nav {
       display: none;
-    }
-
-    & .header__label {
-      margin-left: 0;
     }
 
     & .header__tools {

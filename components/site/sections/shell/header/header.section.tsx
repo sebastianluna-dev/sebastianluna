@@ -5,8 +5,9 @@ import { PORTFOLIO_YEAR } from "@/constants/profile.const";
 import { MobileMenu } from "./mobile-menu.comp";
 import "./header.section.css";
 
-// Top row of the page: the anchor links (desktop), the "Portafolio 2026"
-// label, the language switch and, on the phone, the menu button.
+// Top row of the page: the "Portafolio 2026" label on the left, the anchor
+// links in the middle (desktop), the language switch on the right and, on the
+// phone, the menu button.
 export function Header() {
   const t = useTranslations("nav");
   const tCommon = useTranslations("common");
@@ -14,6 +15,7 @@ export function Header() {
   return (
     <header className="section header">
       <div className="section__inner header__inner">
+        <p className="eyebrow header__label">{tCommon("portfolioLabel", { year: PORTFOLIO_YEAR })}</p>
         <nav className="header__nav" aria-label={t("label")}>
           {HEADER_NAV_ITEMS.map((item, index) => (
             <span key={item.key} className="header__nav-item">
@@ -28,7 +30,6 @@ export function Header() {
             </span>
           ))}
         </nav>
-        <p className="eyebrow header__label">{tCommon("portfolioLabel", { year: PORTFOLIO_YEAR })}</p>
         <div className="header__tools">
           <LocaleSwitcher />
           <MobileMenu />

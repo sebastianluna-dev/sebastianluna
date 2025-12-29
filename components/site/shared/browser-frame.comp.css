@@ -144,8 +144,28 @@
     overflow: hidden;
   }
 
+  /* The captures share one cell, so the open one fades in over the last. */
   & .browser-frame__viewport {
+    display: grid;
     background: #fff;
+  }
+
+  & .browser-frame__view {
+    grid-area: 1 / 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.012);
+    transition:
+      opacity 0.6s var(--ease-out),
+      transform 0.6s var(--ease-out),
+      visibility 0s linear 0.6s;
+
+    &.browser-frame__view_open {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      transition-delay: 0s;
+    }
   }
 
   /* On the phone only the screenshot remains, with a hairline around it. */

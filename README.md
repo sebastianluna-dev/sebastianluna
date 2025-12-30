@@ -69,6 +69,6 @@ Hay dos componentes de cliente. El menú del teléfono (`mobile-menu.comp.tsx`),
 
 ## Despliegue en Vercel
 
-Basta con conectar el repositorio: no hay variables obligatorias. Define `NEXT_PUBLIC_SITE_URL` con el dominio final para que el sitemap y las canónicas lo usen.
+Basta con conectar el repositorio: no hay variables obligatorias. Define `NEXT_PUBLIC_SITE_URL` con el dominio final para que el sitemap y las canónicas lo usen, **con el mismo host al que responde el sitio**: hoy es `https://www.sebastianluna.dev` y el dominio sin `www` contesta con un 308 hacia él. Una canónica que redirige no vale como canónica: Lighthouse la marca («Points to another `hreflang` location») y el SEO baja de 100 a 92.
 
 Las convenciones de código están en `AGENTS.md`; la deuda conocida, en `IMPROVEMENTS.md`; las tareas mecánicas, en `todos.md`.

@@ -45,7 +45,8 @@ export function HeroSection() {
             alt={t("portraitAlt")}
             width={PROFILE.portrait.width}
             height={PROFILE.portrait.height}
-            sizes="(max-width: 767px) 60vw, 380px"
+            /* The portrait is as wide as its card, never a share of the screen. */
+            sizes="(max-width: 767px) 200px, 380px"
             quality={100}
             priority
           />
